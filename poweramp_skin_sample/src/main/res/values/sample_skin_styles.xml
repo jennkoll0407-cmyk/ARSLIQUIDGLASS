@@ -95,6 +95,8 @@
 		<item name="com.maxmpz.audioplayer:EqToneButton">@style/ARSGlassEqToneButton</item>
 		<item name="com.maxmpz.audioplayer:EqLimiterButton">@style/ARSGlassEqLimiterButton</item>
 		<item name="com.maxmpz.audioplayer:EqEquPresetButtonLayout">@style/ARSGlassEqPresetButton</item>
+		<item name="com.maxmpz.audioplayer:EqEquPresetButtonLayout_scene_button_menu">@style/ARSGlassEqPresetPopup</item>
+		<item name="com.maxmpz.audioplayer:ItemPopupList">@style/ARSGlassItemPopupList</item>
 		<item name="com.maxmpz.audioplayer:EqMenu">@style/ARSGlassEqMenuButton</item>
 
 		<item name="com.maxmpz.audioplayer:TopAABounds">@style/SampleSkin_PlayerCentered_TopAABounds</item>
@@ -1217,6 +1219,16 @@
 	</style>
 
 	<!-- Glass surface for the preset popup button; inherits native popup/list behavior. -->
+	<style name="ARSGlassItemPopupList" parent="com.maxmpz.audioplayer:ItemPopupList">
+		<!-- Glass background for popup rows, including the EQ preset list. -->
+		<item name="android:background">@drawable/ripple_meta_info_glass</item>
+	</style>
+
+	<style name="ARSGlassEqPresetPopup" parent="com.maxmpz.audioplayer:EqEquPresetButtonLayout_scene_button_menu">
+		<!-- Style the actual popup panel, not only the button that opens it. -->
+		<item name="android:background">@drawable/ripple_meta_info_glass</item>
+	</style>
+
 	<style name="ARSGlassEqPresetButton" parent="com.maxmpz.audioplayer:EqEquPresetButtonLayout">
 		<item name="android:background">@drawable/ripple_subcontrol_glass</item>
 	</style>
