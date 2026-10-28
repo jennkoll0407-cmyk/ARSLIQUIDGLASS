@@ -58,6 +58,18 @@
 		<!-- This disables reduceBottomInset - see @style/TopContainer -->
 		<item name="com.maxmpz.audioplayer:TopContainer">@style/TopContainer</item>
 
+		<!-- Restore all playback controls in the main album-art player layout. -->
+		<item name="com.maxmpz.audioplayer:TopPlay">@style/AAA_TopPlay</item>
+		<item name="com.maxmpz.audioplayer:TopPlay_scene_playing">@style/AAA_TopPlay_scene_playing</item>
+		<item name="com.maxmpz.audioplayer:TopPause">@style/AAA_TopPause</item>
+		<item name="com.maxmpz.audioplayer:TopPause_scene_playing">@style/AAA_TopPause_scene_playing</item>
+		<item name="com.maxmpz.audioplayer:TopPrevCat">@style/AAA_TopPrevCat</item>
+		<item name="com.maxmpz.audioplayer:TopRw">@style/AAA_TopRw</item>
+		<item name="com.maxmpz.audioplayer:TopRw_scene_playing">@style/AAA_TopRw_scene_playing</item>
+		<item name="com.maxmpz.audioplayer:TopFf">@style/AAA_TopFf</item>
+		<item name="com.maxmpz.audioplayer:TopFf_scene_playing">@style/AAA_TopFf_scene_playing</item>
+		<item name="com.maxmpz.audioplayer:TopNextCat">@style/AAA_TopNextCat</item>
+
 		<!-- Change Navbar style to make it fill whole width -->
 		<!-- iOS 26-inspired floating Liquid Glass navigation bar -->
 		<item name="com.maxmpz.audioplayer:Navbar">@style/Navbar</item>
