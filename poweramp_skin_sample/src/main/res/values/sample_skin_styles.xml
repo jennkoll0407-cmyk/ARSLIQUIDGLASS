@@ -34,7 +34,7 @@
 		<item name="com.maxmpz.audioplayer:corners_aa_other_grid_zoomed">matchHeight</item>
 
 		<item name="com.maxmpz.audioplayer:corners_aa_tracks_small">2dp</item>
-		<item name="com.maxmpz.audioplayer:corners_aa_scene_aa">14dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_scene_aa">28dp</item>
 		<item name="com.maxmpz.audioplayer:corners_miniplayer_aa">0dp</item>
 
 		<!--<item name="com.maxmpz.audioplayer:colorBgInverse">#F2FFFFFF</item>--><!-- Change e.g. all background colors globally. See other color* definitions in reference_resources -->
