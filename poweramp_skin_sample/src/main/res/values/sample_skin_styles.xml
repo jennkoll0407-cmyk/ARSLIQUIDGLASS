@@ -9,7 +9,7 @@
 	<style name="SampleSkin" parent="com.maxmpz.audioplayer:style/ActivityTheme_Black">
 		<item name="android:windowShowWallpaper">false</item>
 		<item name="android:windowBackground">@android:color/transparent</item>
-		<item name="android:popupBackground">@drawable/meta_info_glass_surface</item>
+		<item name="android:popupBackground">@drawable/ripple_meta_info_glass</item>
 		<item name="android:textColorPrimary">@color/ars_white</item>
 		<item name="android:textColorSecondary">@color/ars_white_secondary</item>
 		<item name="android:textColorHint">@color/ars_white_secondary</item>
@@ -335,7 +335,7 @@
 		<item name="com.maxmpz.audioplayer:TopEditableButtonLayout">@style/GlassEditableButtonLayout</item>
 		<item name="com.maxmpz.audioplayer:TopEditableDynamicButtonLayout">@style/GlassEditableDynamicButtonLayout</item>
 		<item name="com.maxmpz.audioplayer:TopEditableSleepTimerButtonLayout">@style/GlassEditableSleepTimerButtonLayout</item>
-		<item name="com.maxmpz.audioplayer:alt_menu_bg">@drawable/rounded_always</item>
+		<item name="com.maxmpz.audioplayer:alt_menu_bg">@drawable/ripple_meta_info_glass</item>
 		<item name="com.maxmpz.audioplayer:alt_ratingbar_bg">@drawable/rounded_always</item>
 		<item name="com.maxmpz.audioplayer:alt_sub_aa_button_bg">@drawable/ripple_button</item>
 		<item name="com.maxmpz.audioplayer:alt_title_bg">@drawable/rounded_always</item>
