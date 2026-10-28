@@ -51,7 +51,7 @@
 
 		<!-- 912+: special theme attribute to control navbar margin -->
 		<item name="com.maxmpz.audioplayer:navbar_marginB">0dp</item>
-		<item name="com.maxmpz.audioplayer:navbar_marginT">4dp</item>
+		<item name="com.maxmpz.audioplayer:navbar_marginT">10dp</item>
 		<!-- This is the padding between tone and navbar - increase slightly for the shadow under tone knobs -->
 		<item name="com.maxmpz.audioplayer:EqTonePanel_paddingBottom">8dp</item>
 
