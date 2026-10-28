@@ -1213,12 +1213,12 @@
 
 	<!-- Glass surface for the preset popup button; inherits native popup/list behavior. -->
 	<style name="ARSGlassEqPresetButton" parent="com.maxmpz.audioplayer:EqEquPresetButtonLayout">
-		<item name="android:background">@drawable/eq_control_glass_selector</item>
+		<item name="android:background">@drawable/ripple_subcontrol_glass</item>
 	</style>
 
 	<!-- Glass surface for the three-dot menu; preserve its original icon and popup wiring. -->
 	<style name="ARSGlassEqMenuButton" parent="com.maxmpz.audioplayer:EqMenu">
-		<item name="android:background">@drawable/eq_control_glass_selector</item>
+		<item name="android:background">@drawable/ripple_subcontrol_glass</item>
 	</style>
 
 </resources>
