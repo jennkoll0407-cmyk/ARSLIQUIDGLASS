@@ -1199,15 +1199,18 @@
 	<!-- Glass surface for Equ / Tone / Limit; keep Poweramp's native checkbox behavior. -->
 	<style name="ARSGlassEqMainButton" parent="com.maxmpz.audioplayer:EqEquButton">
 		<item name="android:background">@drawable/eq_control_glass_selector</item>
+		<item name="android:stateListAnimator">@animator/eq_button_scale_animator</item>
 		<item name="android:textColor">@color/ars_white</item>
 	</style>
 
 	<style name="ARSGlassEqToneButton" parent="com.maxmpz.audioplayer:EqToneButton">
 		<item name="android:background">@drawable/eq_control_glass_selector</item>
+		<item name="android:stateListAnimator">@animator/eq_button_scale_animator</item>
 		<item name="android:textColor">@color/ars_white</item>
 	</style>
 	<style name="ARSGlassEqLimiterButton" parent="com.maxmpz.audioplayer:EqLimiterButton">
 		<item name="android:background">@drawable/eq_control_glass_selector</item>
+		<item name="android:stateListAnimator">@animator/eq_button_scale_animator</item>
 		<item name="android:textColor">@color/ars_white</item>
 	</style>
 
