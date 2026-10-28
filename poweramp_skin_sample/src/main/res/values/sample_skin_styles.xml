@@ -34,7 +34,7 @@
 		<item name="com.maxmpz.audioplayer:corners_aa_other_grid_zoomed">matchHeight</item>
 
 		<item name="com.maxmpz.audioplayer:corners_aa_tracks_small">2dp</item>
-		<item name="com.maxmpz.audioplayer:corners_aa_scene_aa">14dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_scene_aa">28dp</item>
 		<item name="com.maxmpz.audioplayer:corners_miniplayer_aa">0dp</item>
 
 		<!--<item name="com.maxmpz.audioplayer:colorBgInverse">#F2FFFFFF</item>--><!-- Change e.g. all background colors globally. See other color* definitions in reference_resources -->
@@ -165,6 +165,14 @@
 		<item name="SampleSkin_ItemTrackAAImage_scene_aa_scale">0.975</item>
 		<item name="SampleSkin_ItemTrackAAImage_scene_aa_scale_playing">1.0</item>
 
+		<!-- Keep all five main playback controls available on the album-art player. -->
+		<item name="com.maxmpz.audioplayer:TopPrevCat">@style/ARS_TopPrevCat</item>
+		<item name="com.maxmpz.audioplayer:TopRw">@style/ARS_TopRw</item>
+		<item name="com.maxmpz.audioplayer:TopFf">@style/ARS_TopFf</item>
+		<item name="com.maxmpz.audioplayer:TopNextCat">@style/ARS_TopNextCat</item>
+		<item name="com.maxmpz.audioplayer:TopPlay">@style/ARS_TopPlay</item>
+		<item name="com.maxmpz.audioplayer:TopPause">@style/ARS_TopPause</item>
+
 		<!-- Apply some styling to main screen meta -->
 		<item name="com.maxmpz.audioplayer:TopMetaInfo">@style/TopMetaInfo</item>
 		<item name="com.maxmpz.audioplayer:TopMetaInfoLabel">@style/TopMetaInfoLabel</item>
@@ -181,6 +189,44 @@
 	<!--	<item name="com.maxmpz.audioplayer:drawableTint">#F2FFFFFF</item>-->
 
 	<!--</style>-->
+
+	<!-- Explicit high-contrast playback-control styles for the Liquid Glass player. -->
+	<style name="ARS_TopPrevCat" parent="com.maxmpz.audioplayer:TopPrevCat">
+		<item name="android:visibility">visible</item>
+		<item name="android:background">@drawable/ars_glass_control</item>
+		<item name="android:elevation">4dp</item>
+		<item name="com.maxmpz.audioplayer:drawableTint">#FFFFFFFF</item>
+	</style>
+	<style name="ARS_TopRw" parent="com.maxmpz.audioplayer:TopRw">
+		<item name="android:visibility">visible</item>
+		<item name="android:background">@drawable/ars_glass_control</item>
+		<item name="android:elevation">4dp</item>
+		<item name="com.maxmpz.audioplayer:drawableTint">#FFFFFFFF</item>
+	</style>
+	<style name="ARS_TopFf" parent="com.maxmpz.audioplayer:TopFf">
+		<item name="android:visibility">visible</item>
+		<item name="android:background">@drawable/ars_glass_control</item>
+		<item name="android:elevation">4dp</item>
+		<item name="com.maxmpz.audioplayer:drawableTint">#FFFFFFFF</item>
+	</style>
+	<style name="ARS_TopNextCat" parent="com.maxmpz.audioplayer:TopNextCat">
+		<item name="android:visibility">visible</item>
+		<item name="android:background">@drawable/ars_glass_control</item>
+		<item name="android:elevation">4dp</item>
+		<item name="com.maxmpz.audioplayer:drawableTint">#FFFFFFFF</item>
+	</style>
+	<style name="ARS_TopPlay" parent="com.maxmpz.audioplayer:TopPlay">
+		<item name="android:visibility">visible</item>
+		<item name="android:background">@drawable/ars_glass_control</item>
+		<item name="android:elevation">4dp</item>
+		<item name="com.maxmpz.audioplayer:drawableTint">#FFFFFFFF</item>
+	</style>
+	<style name="ARS_TopPause" parent="com.maxmpz.audioplayer:TopPause">
+		<item name="android:visibility">visible</item>
+		<item name="android:background">@drawable/ars_glass_control</item>
+		<item name="android:elevation">4dp</item>
+		<item name="com.maxmpz.audioplayer:drawableTint">#FFFFFFFF</item>
+	</style>
 
 	<style name="TopContainer" parent="com.maxmpz.audioplayer:TopContainer">
 		<!-- Needed for Android 10+ and small Android navbar line. That line requires slight offset, so our paddings look fine
