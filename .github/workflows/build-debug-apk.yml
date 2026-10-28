@@ -47,6 +47,15 @@ jobs:
           echo "ARS_KEY_ALIAS=$ARS_KEY_ALIAS" >> "$GITHUB_ENV"
           echo "ARS_KEY_PASSWORD=$ARS_KEY_PASSWORD" >> "$GITHUB_ENV"
 
+      - name: Verify stable signing keystore
+        if: env.ARS_KEYSTORE_PATH != ''
+        env:
+          ARS_STORE_PASSWORD: ${{ secrets.ARS_STORE_PASSWORD }}
+          ARS_KEY_ALIAS: ${{ secrets.ARS_KEY_ALIAS }}
+        run: |
+          keytool -list -keystore "$ARS_KEYSTORE_PATH" -storepass "$ARS_STORE_PASSWORD" -alias "$ARS_KEY_ALIAS" >/dev/null
+          echo "Stable signing keystore verified."
+
       - name: Make Gradle wrapper executable
         run: chmod +x ./gradlew
 
