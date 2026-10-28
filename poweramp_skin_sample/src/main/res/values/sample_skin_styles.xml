@@ -379,7 +379,7 @@
 		<item name="android:layout_marginBottom">6dp</item>
 		<item name="com.maxmpz.audioplayer:scale">1</item>
 		<item name="com.maxmpz.audioplayer:layout_compensateScale">1</item>
-		<item name="android:background">@drawable/ripple_subcontrol_glass</item>
+		<item name="android:background">@drawable/eq_control_glass_selector</item>
 		<item name="com.maxmpz.audioplayer:drawableTint">@color/ars_white</item>
 		<item name="com.maxmpz.audioplayer:drawableWidth">@com.maxmpz.audioplayer:dimen/ItemLike_drawableSize</item>
 		<item name="com.maxmpz.audioplayer:drawableHeight">@com.maxmpz.audioplayer:dimen/ItemLike_drawableSize</item>
@@ -395,7 +395,7 @@
 		<item name="android:layout_marginBottom">6dp</item>
 		<item name="com.maxmpz.audioplayer:scale">1</item>
 		<item name="com.maxmpz.audioplayer:layout_compensateScale">1</item>
-		<item name="android:background">@drawable/ripple_subcontrol_glass</item>
+		<item name="android:background">@drawable/eq_control_glass_selector</item>
 		<item name="com.maxmpz.audioplayer:drawableTint">@color/ars_white</item>
 		<item name="com.maxmpz.audioplayer:drawableWidth">@com.maxmpz.audioplayer:dimen/ItemLike_drawableSize</item>
 		<item name="com.maxmpz.audioplayer:drawableHeight">@com.maxmpz.audioplayer:dimen/ItemLike_drawableSize</item>
@@ -451,7 +451,7 @@
 		<item name="com.maxmpz.audioplayer:drawableTint">@color/ars_white</item>
 	</style>
 	<style name="GlassTopMetaInfoLabel" parent="com.maxmpz.audioplayer:TopMetaInfoLabel">
-		<item name="android:background">@drawable/ripple_subcontrol_glass</item>
+		<item name="android:background">@drawable/eq_control_glass_selector</item>
 		<item name="android:minWidth">32dp</item>
 		<item name="android:minHeight">32dp</item>
 		<item name="android:padding">4dp</item>
@@ -553,7 +553,7 @@
 		<item name="android:minHeight">44dp</item>
 	</style>
 	<style name="GlassShuffleButtonLayout" parent="com.maxmpz.audioplayer:TopShuffleButtonLayout">
-		<item name="android:background">@drawable/ripple_subcontrol_glass</item>
+		<item name="android:background">@drawable/eq_control_glass_selector</item>
 		<item name="android:minWidth">40dp</item>
 		<item name="android:minHeight">40dp</item>
 		<item name="android:padding">6dp</item>
@@ -562,7 +562,7 @@
 		<item name="com.maxmpz.audioplayer:drawableTint">@color/ars_white</item>
 	</style>
 	<style name="GlassRepeatButtonLayout" parent="com.maxmpz.audioplayer:TopRepeatButtonLayout">
-		<item name="android:background">@drawable/ripple_subcontrol_glass</item>
+		<item name="android:background">@drawable/eq_control_glass_selector</item>
 		<item name="android:minWidth">40dp</item>
 		<item name="android:minHeight">40dp</item>
 		<item name="android:padding">6dp</item>
@@ -571,7 +571,7 @@
 		<item name="com.maxmpz.audioplayer:drawableTint">@color/ars_white</item>
 	</style>
 	<style name="GlassSleepTimerButtonLayout" parent="com.maxmpz.audioplayer:TopSleepTimerButtonLayout">
-		<item name="android:background">@drawable/ripple_subcontrol_glass</item>
+		<item name="android:background">@drawable/eq_control_glass_selector</item>
 		<item name="android:minWidth">40dp</item>
 		<item name="android:minHeight">40dp</item>
 		<item name="android:padding">6dp</item>
@@ -580,7 +580,7 @@
 		<item name="com.maxmpz.audioplayer:drawableTint">@color/ars_white</item>
 	</style>
 	<style name="GlassEditableButtonLayout" parent="com.maxmpz.audioplayer:TopEditableButtonLayout">
-		<item name="android:background">@drawable/ripple_subcontrol_glass</item>
+		<item name="android:background">@drawable/eq_control_glass_selector</item>
 		<item name="android:minWidth">40dp</item>
 		<item name="android:minHeight">40dp</item>
 		<item name="android:padding">6dp</item>
@@ -588,10 +588,10 @@
 		<item name="android:layout_marginRight">3dp</item>
 	</style>
 	<style name="GlassEditableDynamicButtonLayout" parent="com.maxmpz.audioplayer:TopEditableDynamicButtonLayout">
-		<item name="android:background">@drawable/ripple_subcontrol_glass</item>
+		<item name="android:background">@drawable/eq_control_glass_selector</item>
 	</style>
 	<style name="GlassEditableSleepTimerButtonLayout" parent="com.maxmpz.audioplayer:TopEditableSleepTimerButtonLayout">
-		<item name="android:background">@drawable/ripple_subcontrol_glass</item>
+		<item name="android:background">@drawable/eq_control_glass_selector</item>
 	</style>
 	<style name="SampleSkin_MoreButtons">
 		<item name="com.maxmpz.audioplayer:TopWaveseekLayout_extraLayout">@layout/merge_topwaveseeklayout_glass</item>
@@ -1198,27 +1198,27 @@
 
 	<!-- Glass surface for Equ / Tone / Limit; keep Poweramp's native checkbox behavior. -->
 	<style name="ARSGlassEqMainButton" parent="com.maxmpz.audioplayer:EqEquButton">
-		<item name="android:background">@drawable/ripple_subcontrol_glass</item>
+		<item name="android:background">@drawable/eq_control_glass_selector</item>
 		<item name="android:textColor">@color/ars_white</item>
 	</style>
 
 	<style name="ARSGlassEqToneButton" parent="com.maxmpz.audioplayer:EqToneButton">
-		<item name="android:background">@drawable/ripple_subcontrol_glass</item>
+		<item name="android:background">@drawable/eq_control_glass_selector</item>
 		<item name="android:textColor">@color/ars_white</item>
 	</style>
 	<style name="ARSGlassEqLimiterButton" parent="com.maxmpz.audioplayer:EqLimiterButton">
-		<item name="android:background">@drawable/ripple_subcontrol_glass</item>
+		<item name="android:background">@drawable/eq_control_glass_selector</item>
 		<item name="android:textColor">@color/ars_white</item>
 	</style>
 
 	<!-- Glass surface for the preset popup button; inherits native popup/list behavior. -->
 	<style name="ARSGlassEqPresetButton" parent="com.maxmpz.audioplayer:EqEquPresetButtonLayout">
-		<item name="android:background">@drawable/ripple_subcontrol_glass</item>
+		<item name="android:background">@drawable/eq_control_glass_selector</item>
 	</style>
 
 	<!-- Glass surface for the three-dot menu; preserve its original icon and popup wiring. -->
 	<style name="ARSGlassEqMenuButton" parent="com.maxmpz.audioplayer:EqMenu">
-		<item name="android:background">@drawable/ripple_subcontrol_glass</item>
+		<item name="android:background">@drawable/eq_control_glass_selector</item>
 	</style>
 
 </resources>
