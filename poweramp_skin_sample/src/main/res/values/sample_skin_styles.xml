@@ -91,8 +91,8 @@
 		<item name="com.maxmpz.audioplayer:EqTabLayout">@style/SampleSkin_TransparentEqTabLayout</item>
 		<!-- Liquid-glass styling for Equalizer controls -->
 		<item name="com.maxmpz.audioplayer:EqEquButton">@style/ARSGlassEqMainButton</item>
-		<item name="com.maxmpz.audioplayer:EqToneButton">@style/ARSGlassEqMainButton</item>
-		<item name="com.maxmpz.audioplayer:EqLimiterButton">@style/ARSGlassEqMainButton</item>
+		<item name="com.maxmpz.audioplayer:EqToneButton">@style/ARSGlassEqToneButton</item>
+		<item name="com.maxmpz.audioplayer:EqLimiterButton">@style/ARSGlassEqLimiterButton</item>
 		<item name="com.maxmpz.audioplayer:EqEquPresetButtonLayout">@style/ARSGlassEqPresetButton</item>
 		<item name="com.maxmpz.audioplayer:EqMenu">@style/ARSGlassEqMenuButton</item>
 
@@ -1197,7 +1197,16 @@
 
 
 	<!-- Glass surface for Equ / Tone / Limit; keep Poweramp's native checkbox behavior. -->
-	<style name="ARSGlassEqMainButton" parent="com.maxmpz.audioplayer:EqCheckButton">
+	<style name="ARSGlassEqMainButton" parent="com.maxmpz.audioplayer:EqEquButton">
+		<item name="android:background">@drawable/ripple_subcontrol_glass</item>
+		<item name="android:textColor">@color/ars_white</item>
+	</style>
+
+	<style name="ARSGlassEqToneButton" parent="com.maxmpz.audioplayer:EqToneButton">
+		<item name="android:background">@drawable/ripple_subcontrol_glass</item>
+		<item name="android:textColor">@color/ars_white</item>
+	</style>
+	<style name="ARSGlassEqLimiterButton" parent="com.maxmpz.audioplayer:EqLimiterButton">
 		<item name="android:background">@drawable/ripple_subcontrol_glass</item>
 		<item name="android:textColor">@color/ars_white</item>
 	</style>
