@@ -10,7 +10,7 @@
 	<color name="ars_glass_highlight">#2AFFFFFF</color>
 	<color name="ars_glass_border">#66DDE8F2</color>
 	<color name="ars_glass_inner_border">#20DDE8F2</color>
-	<color name="ars_ripple">#66FFFFFF</color>
+	<color name="ars_ripple">#33FFFFFF</color>
 	<color name="ars_white">#F5F8FC</color>
 	<color name="ars_white_secondary">#D9E5F0</color>
 </resources>
