@@ -29,6 +29,24 @@ jobs:
       - name: Configure Poweramp resource path
         run: printf 'poweramp.apk=Poweramp-build-1026-resources.zip\n' > local.properties
 
+      - name: Configure stable APK signing (optional until repository secrets are added)
+        env:
+          ARS_KEYSTORE_BASE64: ${{ secrets.ARS_KEYSTORE_BASE64 }}
+          ARS_STORE_PASSWORD: ${{ secrets.ARS_STORE_PASSWORD }}
+          ARS_KEY_ALIAS: ${{ secrets.ARS_KEY_ALIAS }}
+          ARS_KEY_PASSWORD: ${{ secrets.ARS_KEY_PASSWORD }}
+        run: |
+          if [ -n "$ARS_KEYSTORE_BASE64" ] && [ -n "$ARS_STORE_PASSWORD" ] && [ -n "$ARS_KEY_ALIAS" ] && [ -n "$ARS_KEY_PASSWORD" ]; then
+            printf '%s' "$ARS_KEYSTORE_BASE64" | base64 --decode > "$RUNNER_TEMP/ars-liquid-glass.jks"
+            echo "ARS_KEYSTORE_PATH=$RUNNER_TEMP/ars-liquid-glass.jks" >> "$GITHUB_ENV"
+            echo "Stable signing keystore configured."
+          else
+            echo "::warning::Stable signing secrets are missing. This build uses a temporary debug key and may not update an existing installation."
+          fi
+          echo "ARS_STORE_PASSWORD=$ARS_STORE_PASSWORD" >> "$GITHUB_ENV"
+          echo "ARS_KEY_ALIAS=$ARS_KEY_ALIAS" >> "$GITHUB_ENV"
+          echo "ARS_KEY_PASSWORD=$ARS_KEY_PASSWORD" >> "$GITHUB_ENV"
+
       - name: Make Gradle wrapper executable
         run: chmod +x ./gradlew
 
