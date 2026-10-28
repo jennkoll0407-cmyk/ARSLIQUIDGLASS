@@ -4,12 +4,172 @@
 
 	<!-- NOTE: see also values-land/sample_skin_alt.xml -->
 
-	<style name="SampleSkin_Alt_Centered_Base" parent="com.maxmpz.audioplayer:ActivityTheme_Whitepro_AltLayout">
+	<style name="SampleSkin_PlayerCentered_TopListWidget" parent="TopListWidget">
+		<item name="com.maxmpz.audioplayer:listSubstyle">@style/SampleSkin_PlayerCentered_ListSubstyle</item>
+	</style>
+	<style name="SampleSkin_PlayerCentered_ListSubstyle" parent="com.maxmpz.audioplayer:style/Alt_ListSubstyle_Base">
+		<item name="com.maxmpz.audioplayer:aaPaddingBottom">112dp</item>
+		<item name="com.maxmpz.audioplayer:aaMaxYRotation">-2</item>
+		<item name="com.maxmpz.audioplayer:aaMaxZRotation">0</item>
+		<item name="com.maxmpz.audioplayer:aaMaxScale">1</item>
+		<item name="com.maxmpz.audioplayer:aaDenseFactor">0.6</item>
+	</style>
+	<style name="SampleSkin_PlayerCentered_TopAABounds" parent="com.maxmpz.audioplayer:style/Alt_TopAABounds">
+		<item name="com.maxmpz.audioplayer:aaPaddingBottom">112dp</item>
+		<item name="android:layout_marginBottom">112dp</item>
+	</style>
+	<style name="SampleSkin_PlayerCentered_ItemTrackAAImage_scene_aa" parent="com.maxmpz.audioplayer:ItemTrackAAImage_scene_aa">
+		<item name="android:layout_width">match_parent</item>
+		<item name="android:layout_height">match_parent</item>
+		<item name="com.maxmpz.audioplayer:layout_matchDimension">heightToWidth</item>
+		<item name="android:layout_marginTop">8dp</item>
+		<item name="android:layout_marginBottom">8dp</item>
+		<item name="android:layout_marginLeft">8dp</item>
+		<item name="android:layout_marginRight">8dp</item>
+		<item name="com.maxmpz.audioplayer:scale">?SampleSkin_ItemTrackAAImage_scene_aa_scale</item>
+		<item name="android:background">@null</item>
+		<item name="android:padding">2dp</item>
+	</style>
+	<style name="SampleSkin_PlayerCentered_ItemTrackAAImage_scene_aa_playing" parent="SampleSkin_PlayerCentered_ItemTrackAAImage_scene_aa">
+		<item name="com.maxmpz.audioplayer:scale">?SampleSkin_ItemTrackAAImage_scene_aa_scale_playing</item>
+	</style>
+	<style name="SampleSkin_PlayerCentered_ItemTrackTitle_scene_aa" parent="com.maxmpz.audioplayer:ItemTrackTitle_scene_aa">
+		<item name="com.maxmpz.audioplayer:layout_attachLeft">@null</item>
+		<item name="com.maxmpz.audioplayer:layout_attachRight">@null</item>
+		<item name="com.maxmpz.audioplayer:layout_attachTop">@null</item>
+		<item name="com.maxmpz.audioplayer:layout_attachBottom">@com.maxmpz.audioplayer:id/line2</item>
+		<item name="android:layout_marginLeft">0dp</item>
+		<item name="android:layout_marginRight">0dp</item>
+		<item name="android:layout_gravity">center_horizontal</item>
+		<item name="android:textColor">@color/ars_white</item>
+	</style>
+	<style name="SampleSkin_PlayerCentered_ItemTrackTitle_scene_aa_playing" parent="SampleSkin_PlayerCentered_ItemTrackTitle_scene_aa">
+		<item name="com.maxmpz.audioplayer:baseScene">@com.maxmpz.audioplayer:id/scene_aa</item>
+		<item name="com.maxmpz.audioplayer:layout_attachLeft">@null</item>
+		<item name="com.maxmpz.audioplayer:layout_attachRight">@null</item>
+		<item name="com.maxmpz.audioplayer:layout_attachTop">@null</item>
+		<item name="com.maxmpz.audioplayer:layout_attachBottom">@com.maxmpz.audioplayer:id/line2</item>
+		<item name="android:layout_marginLeft">0dp</item>
+		<item name="android:layout_marginRight">0dp</item>
+		<item name="android:layout_gravity">center_horizontal</item>
+	</style>
+	<style name="SampleSkin_PlayerCentered_ItemTrackLine2_scene_aa" parent="com.maxmpz.audioplayer:ItemTrackLine2_scene_aa">
+		<item name="com.maxmpz.audioplayer:layout_attachLeft">@null</item>
+		<item name="com.maxmpz.audioplayer:layout_attachRight">@null</item>
+		<item name="com.maxmpz.audioplayer:layout_attachTop">@null</item>
+		<item name="com.maxmpz.audioplayer:layout_attachBottom">@com.maxmpz.audioplayer:id/rating</item>
+		<item name="android:layout_marginLeft">0dp</item>
+		<item name="android:layout_marginRight">0dp</item>
+		<item name="android:layout_gravity">center_horizontal</item>
+		<item name="android:layout_marginBottom">8dp</item>
+		<item name="android:textColor">@color/ars_white_secondary</item>
+	</style>
+	<style name="SampleSkin_PlayerCentered_ItemTrackLine2_scene_aa_playing" parent="SampleSkin_PlayerCentered_ItemTrackLine2_scene_aa">
+		<item name="com.maxmpz.audioplayer:baseScene">@com.maxmpz.audioplayer:id/scene_aa</item>
+		<item name="com.maxmpz.audioplayer:layout_attachLeft">@null</item>
+		<item name="com.maxmpz.audioplayer:layout_attachRight">@null</item>
+		<item name="com.maxmpz.audioplayer:layout_attachTop">@null</item>
+		<item name="com.maxmpz.audioplayer:layout_attachBottom">@com.maxmpz.audioplayer:id/rating</item>
+		<item name="android:layout_marginLeft">0dp</item>
+		<item name="android:layout_marginRight">0dp</item>
+		<item name="android:layout_gravity">center_horizontal</item>
+		<item name="android:layout_marginBottom">8dp</item>
+	</style>
+	<style name="SampleSkin_PlayerCentered_ItemLikeUnlikeLayout_scene_aa" parent="com.maxmpz.audioplayer:ItemLikeUnlikeLayout_scene_aa">
+		<item name="com.maxmpz.audioplayer:layout_attachBottomToBottom">@null</item>
+		<item name="com.maxmpz.audioplayer:layout_attachBottom">parent</item>
+		<item name="android:layout_marginBottom">8dp</item>
+		<item name="com.maxmpz.audioplayer:scale">1</item>
+		<item name="com.maxmpz.audioplayer:layout_compensateScale">1</item>
+	</style>
+	<style name="SampleSkin_PlayerCentered_ItemLike_scene_aa" parent="com.maxmpz.audioplayer:ItemLike_scene_aa">
+		<item name="android:background">@drawable/ripple_subcontrol_glass</item>
+		<item name="com.maxmpz.audioplayer:drawableTint">?com.maxmpz.audioplayer:colorRating</item>
+		<item name="com.maxmpz.audioplayer:scale">1</item>
+		<item name="com.maxmpz.audioplayer:layout_compensateScale">1</item>
+	</style>
+	<style name="SampleSkin_PlayerCentered_ItemUnlike_scene_aa" parent="com.maxmpz.audioplayer:ItemUnlike_scene_aa">
+		<item name="android:background">@drawable/ripple_subcontrol_glass</item>
+		<item name="com.maxmpz.audioplayer:drawableTint">?com.maxmpz.audioplayer:colorRating</item>
+		<item name="com.maxmpz.audioplayer:scale">1</item>
+		<item name="com.maxmpz.audioplayer:layout_compensateScale">1</item>
+	</style>
+	<style name="SampleSkin_PlayerCentered_ItemRatingBar_scene_aa" parent="com.maxmpz.audioplayer:ItemRatingBar_scene_aa">
+		<item name="com.maxmpz.audioplayer:layout_attachBottomToBottom">@null</item>
+		<item name="com.maxmpz.audioplayer:layout_attachBottom">parent</item>
+		<item name="android:layout_marginBottom">8dp</item>
+		<item name="com.maxmpz.audioplayer:lineBackground">@drawable/subcontrol_glass</item>
+	</style>
+	<style name="SampleSkin_PlayerCentered_ItemTrackMenu_scene_aa" parent="com.maxmpz.audioplayer:ItemTrackMenu_scene_aa">
+		<item name="com.maxmpz.audioplayer:layout_attachBottomToBottom">@null</item>
+		<item name="com.maxmpz.audioplayer:layout_attachBottom">parent</item>
+		<item name="android:layout_marginBottom">8dp</item>
+		<item name="com.maxmpz.audioplayer:scale">1</item>
+		<item name="com.maxmpz.audioplayer:layout_compensateScale">1</item>
+		<item name="android:background">@drawable/ripple_subcontrol_glass</item>
+		<item name="com.maxmpz.audioplayer:drawableTint">@color/ars_white</item>
+		<item name="com.maxmpz.audioplayer:drawableWidth">@com.maxmpz.audioplayer:dimen/ItemLike_drawableSize</item>
+		<item name="com.maxmpz.audioplayer:drawableHeight">@com.maxmpz.audioplayer:dimen/ItemLike_drawableSize</item>
+		<item name="android:paddingTop">6dp</item>
+		<item name="android:paddingBottom">6dp</item>
+		<item name="android:paddingLeft">14dp</item>
+		<item name="android:paddingRight">14dp</item>
+	</style>
+	<style name="SampleSkin_PlayerCentered_ItemTrackLyrics_scene_aa" parent="com.maxmpz.audioplayer:ItemTrackLyrics_scene_aa">
+		<item name="com.maxmpz.audioplayer:layout_attachBottomToBottom">@null</item>
+		<item name="com.maxmpz.audioplayer:layout_attachBottom">parent</item>
+		<item name="android:layout_marginBottom">8dp</item>
+		<item name="com.maxmpz.audioplayer:scale">1</item>
+		<item name="com.maxmpz.audioplayer:layout_compensateScale">1</item>
+		<item name="android:background">@drawable/ripple_subcontrol_glass</item>
+		<item name="com.maxmpz.audioplayer:drawableTint">@color/ars_white</item>
+		<item name="com.maxmpz.audioplayer:drawableWidth">@com.maxmpz.audioplayer:dimen/ItemLike_drawableSize</item>
+		<item name="com.maxmpz.audioplayer:drawableHeight">@com.maxmpz.audioplayer:dimen/ItemLike_drawableSize</item>
+		<item name="android:paddingTop">6dp</item>
+		<item name="android:paddingBottom">6dp</item>
+		<item name="android:paddingLeft">14dp</item>
+		<item name="android:paddingRight">14dp</item>
+	</style>
+	<style name="SampleSkin_PlayerCentered_ItemTrackMenu_scene_aa_vis" parent="SampleSkin_PlayerCentered_ItemTrackMenu_scene_aa">
+		<item name="com.maxmpz.audioplayer:baseScene">@com.maxmpz.audioplayer:id/scene_aa</item>
+	</style>
+	<style name="SampleSkin_PlayerCentered_ItemTrackMenu_scene_aa_playing" parent="SampleSkin_PlayerCentered_ItemTrackMenu_scene_aa_vis"/>
+	<style name="SampleSkin_PlayerCentered_ItemTrackLyrics_scene_aa_vis" parent="SampleSkin_PlayerCentered_ItemTrackLyrics_scene_aa">
+		<item name="com.maxmpz.audioplayer:baseScene">@com.maxmpz.audioplayer:id/scene_aa</item>
+		<item name="android:visibility">?com.maxmpz.audioplayer:ItemTrackLyrics_scene_aa_visibility</item>
+	</style>
+	<style name="SampleSkin_PlayerCentered_ItemTrackLyrics_scene_aa_playing" parent="SampleSkin_PlayerCentered_ItemTrackLyrics_scene_aa_vis"/>
+
+	<style name="SampleSkin_Alt_Centered_Base" parent="SampleSkin_AltLayout">
+		<item name="com.maxmpz.audioplayer:TopAABounds">@style/SampleSkin_Alt_Centered_TopAABounds</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackAAImage_scene_aa">@style/SampleSkin_Alt_Centered_ItemTrackAAImage_scene_aa</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackAAImage_scene_aa_playing">@style/SampleSkin_Alt_Centered_ItemTrackAAImage_scene_aa_playing</item>
 		<item name="com.maxmpz.audioplayer:ItemTrackTitle_scene_aa">@style/Alt_Centered_ItemTrackTitle_scene_aa</item>
-		<item name="com.maxmpz.audioplayer:ItemTrackLine2_scene_aa">@style/Alt_ItemTrackLine2_scene_aa</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackTitle_scene_aa_playing">@style/SampleSkin_Alt_Centered_ItemTrackTitle_scene_aa_playing</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackLine2_scene_aa">@style/SampleSkin_Alt_Centered_ItemTrackLine2_scene_aa</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackLine2_scene_aa_playing">@style/SampleSkin_Alt_Centered_ItemTrackLine2_scene_aa_playing</item>
+		<item name="com.maxmpz.audioplayer:ItemLikeUnlikeLayout_scene_aa">@style/SampleSkin_Alt_Centered_ItemLikeUnlikeLayout_scene_aa</item>
+		<item name="com.maxmpz.audioplayer:ItemLike_scene_aa">@style/SampleSkin_Alt_Centered_ItemLike_scene_aa</item>
+		<item name="com.maxmpz.audioplayer:ItemUnlike_scene_aa">@style/SampleSkin_Alt_Centered_ItemUnlike_scene_aa</item>
+		<item name="com.maxmpz.audioplayer:ItemRatingBar_scene_aa">@style/SampleSkin_Alt_Centered_ItemRatingBar_scene_aa</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackMenu_scene_aa">@style/SampleSkin_Alt_Centered_ItemTrackMenu_scene_aa</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackMenu_scene_aa_vis">@style/SampleSkin_Alt_Centered_ItemTrackMenu_scene_aa_vis</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackMenu_scene_aa_playing">@style/SampleSkin_Alt_Centered_ItemTrackMenu_scene_aa_playing</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackLyrics_scene_aa">@style/SampleSkin_Alt_Centered_ItemTrackLyrics_scene_aa</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackLyrics_scene_aa_vis">@style/SampleSkin_Alt_Centered_ItemTrackLyrics_scene_aa_vis</item>
+		<item name="com.maxmpz.audioplayer:ItemTrackLyrics_scene_aa_playing">@style/SampleSkin_Alt_Centered_ItemTrackLyrics_scene_aa_playing</item>
 
 		<!-- Ensure we override our bottom buttons menu, which has a separate override in Poweramp ActivityTheme_Whitepro_AltLayout style -->
 		<item name="com.maxmpz.audioplayer:ItemTrackMenu_scene_bottom_toolbar">@style/ItemTrackMenu_scene_bottom_toolbar</item>
+	</style>
+	<style name="SampleSkin_Alt_Centered_TopAABounds" parent="com.maxmpz.audioplayer:Alt_TopAABounds">
+		<item name="com.maxmpz.audioplayer:aaPaddingBottom">112dp</item>
+		<item name="android:layout_marginBottom">112dp</item>
+	</style>
+	<style name="SampleSkin_Alt_Centered_ItemTrackAAImage_scene_aa" parent="com.maxmpz.audioplayer:style/Alt_ItemTrackAAImage_scene_aa">
+	</style>
+	<style name="SampleSkin_Alt_Centered_ItemTrackAAImage_scene_aa_playing" parent="SampleSkin_Alt_Centered_ItemTrackAAImage_scene_aa">
+		<item name="com.maxmpz.audioplayer:baseScene">@com.maxmpz.audioplayer:id/scene_aa</item>
 	</style>
 	<!-- We'll override this for landscape -->
 	<style name="SampleSkin_Alt_Centered" parent="SampleSkin_Alt_Centered_Base">
@@ -20,7 +180,10 @@
 		<item name="com.maxmpz.audioplayer:layout_attachRight">@null</item>
 		<item name="com.maxmpz.audioplayer:layout_attachTop">@null</item>
 		<item name="com.maxmpz.audioplayer:layout_attachBottom">@com.maxmpz.audioplayer:id/line2</item>
+		<item name="android:layout_marginLeft">0dp</item>
+		<item name="android:layout_marginRight">0dp</item>
 		<item name="android:layout_gravity">center_horizontal</item>
+		<item name="android:textColor">@color/ars_white</item>
 	</style>
 
 	<style name="Alt_ItemTrackLine2_scene_aa" parent="com.maxmpz.audioplayer:Alt_ItemTrackLine2_scene_aa">
@@ -28,8 +191,106 @@
 		<item name="com.maxmpz.audioplayer:layout_attachRight">@null</item>
 		<item name="com.maxmpz.audioplayer:layout_attachTop">@null</item>
 		<item name="com.maxmpz.audioplayer:layout_attachBottom">parent</item>
+		<item name="android:layout_marginLeft">0dp</item>
+		<item name="android:layout_marginRight">0dp</item>
 		<item name="android:layout_gravity">center_horizontal</item>
+		<item name="android:textColor">@color/ars_white_secondary</item>
 	</style>
 
+	<style name="SampleSkin_Alt_Centered_ItemTrackLine2_scene_aa" parent="Alt_ItemTrackLine2_scene_aa">
+		<item name="com.maxmpz.audioplayer:layout_attachBottom">@com.maxmpz.audioplayer:id/rating</item>
+		<item name="android:layout_marginBottom">8dp</item>
+		<item name="android:textColor">@color/ars_white_secondary</item>
+	</style>
+	<style name="SampleSkin_Alt_Centered_ItemTrackTitle_scene_aa_playing" parent="Alt_Centered_ItemTrackTitle_scene_aa">
+		<item name="com.maxmpz.audioplayer:baseScene">@com.maxmpz.audioplayer:id/scene_aa</item>
+		<item name="com.maxmpz.audioplayer:layout_attachLeft">@null</item>
+		<item name="com.maxmpz.audioplayer:layout_attachRight">@null</item>
+		<item name="com.maxmpz.audioplayer:layout_attachTop">@null</item>
+		<item name="com.maxmpz.audioplayer:layout_attachBottom">@com.maxmpz.audioplayer:id/line2</item>
+		<item name="android:layout_marginLeft">0dp</item>
+		<item name="android:layout_marginRight">0dp</item>
+		<item name="android:layout_gravity">center_horizontal</item>
+	</style>
+	<style name="SampleSkin_Alt_Centered_ItemTrackLine2_scene_aa_playing" parent="SampleSkin_Alt_Centered_ItemTrackLine2_scene_aa">
+		<item name="com.maxmpz.audioplayer:baseScene">@com.maxmpz.audioplayer:id/scene_aa</item>
+		<item name="com.maxmpz.audioplayer:layout_attachLeft">@null</item>
+		<item name="com.maxmpz.audioplayer:layout_attachRight">@null</item>
+		<item name="com.maxmpz.audioplayer:layout_attachTop">@null</item>
+		<item name="com.maxmpz.audioplayer:layout_attachBottom">@com.maxmpz.audioplayer:id/rating</item>
+		<item name="android:layout_marginLeft">0dp</item>
+		<item name="android:layout_marginRight">0dp</item>
+		<item name="android:layout_gravity">center_horizontal</item>
+		<item name="android:layout_marginBottom">8dp</item>
+	</style>
+
+	<style name="SampleSkin_Alt_Centered_ItemLikeUnlikeLayout_scene_aa" parent="com.maxmpz.audioplayer:style/Alt_ItemLikeUnlikeLayout_scene_aa">
+		<item name="com.maxmpz.audioplayer:layout_attachBottomToBottom">@null</item>
+		<item name="com.maxmpz.audioplayer:layout_attachBottom">parent</item>
+		<item name="android:layout_marginBottom">8dp</item>
+		<item name="com.maxmpz.audioplayer:scale">1</item>
+		<item name="com.maxmpz.audioplayer:layout_compensateScale">1</item>
+	</style>
+
+	<style name="SampleSkin_Alt_Centered_ItemLike_scene_aa" parent="com.maxmpz.audioplayer:style/Alt_ItemLike_scene_aa">
+		<item name="android:background">@drawable/ripple_subcontrol_glass</item>
+		<item name="com.maxmpz.audioplayer:drawableTint">?com.maxmpz.audioplayer:colorRating</item>
+		<item name="com.maxmpz.audioplayer:scale">1</item>
+		<item name="com.maxmpz.audioplayer:layout_compensateScale">1</item>
+	</style>
+
+	<style name="SampleSkin_Alt_Centered_ItemUnlike_scene_aa" parent="com.maxmpz.audioplayer:style/Alt_ItemUnlike_scene_aa">
+		<item name="android:background">@drawable/ripple_subcontrol_glass</item>
+		<item name="com.maxmpz.audioplayer:drawableTint">?com.maxmpz.audioplayer:colorRating</item>
+		<item name="com.maxmpz.audioplayer:scale">1</item>
+		<item name="com.maxmpz.audioplayer:layout_compensateScale">1</item>
+	</style>
+
+	<style name="SampleSkin_Alt_Centered_ItemRatingBar_scene_aa" parent="com.maxmpz.audioplayer:style/Alt_ItemRatingBar_scene_aa">
+		<item name="com.maxmpz.audioplayer:layout_attachBottomToBottom">@null</item>
+		<item name="com.maxmpz.audioplayer:layout_attachBottom">parent</item>
+		<item name="android:layout_marginBottom">8dp</item>
+		<item name="com.maxmpz.audioplayer:lineBackground">@drawable/subcontrol_glass</item>
+	</style>
+
+	<style name="SampleSkin_Alt_Centered_ItemTrackMenu_scene_aa" parent="com.maxmpz.audioplayer:style/Alt_ItemTrackMenu_scene_aa">
+		<item name="com.maxmpz.audioplayer:layout_attachBottomToBottom">@null</item>
+		<item name="com.maxmpz.audioplayer:layout_attachBottom">parent</item>
+		<item name="android:layout_marginBottom">8dp</item>
+		<item name="com.maxmpz.audioplayer:scale">1</item>
+		<item name="com.maxmpz.audioplayer:layout_compensateScale">1</item>
+		<item name="android:background">@drawable/ripple_subcontrol_glass</item>
+		<item name="com.maxmpz.audioplayer:drawableTint">@color/ars_white</item>
+		<item name="com.maxmpz.audioplayer:drawableWidth">@com.maxmpz.audioplayer:dimen/ItemLike_drawableSize</item>
+		<item name="com.maxmpz.audioplayer:drawableHeight">@com.maxmpz.audioplayer:dimen/ItemLike_drawableSize</item>
+		<item name="android:paddingTop">6dp</item>
+		<item name="android:paddingBottom">6dp</item>
+		<item name="android:paddingLeft">14dp</item>
+		<item name="android:paddingRight">14dp</item>
+	</style>
+	<style name="SampleSkin_Alt_Centered_ItemTrackLyrics_scene_aa" parent="com.maxmpz.audioplayer:style/Alt_ItemTrackLyrics_scene_aa">
+		<item name="com.maxmpz.audioplayer:layout_attachBottomToBottom">@null</item>
+		<item name="com.maxmpz.audioplayer:layout_attachBottom">parent</item>
+		<item name="android:layout_marginBottom">8dp</item>
+		<item name="com.maxmpz.audioplayer:scale">1</item>
+		<item name="com.maxmpz.audioplayer:layout_compensateScale">1</item>
+		<item name="android:background">@drawable/ripple_subcontrol_glass</item>
+		<item name="com.maxmpz.audioplayer:drawableTint">@color/ars_white</item>
+		<item name="com.maxmpz.audioplayer:drawableWidth">@com.maxmpz.audioplayer:dimen/ItemLike_drawableSize</item>
+		<item name="com.maxmpz.audioplayer:drawableHeight">@com.maxmpz.audioplayer:dimen/ItemLike_drawableSize</item>
+		<item name="android:paddingTop">6dp</item>
+		<item name="android:paddingBottom">6dp</item>
+		<item name="android:paddingLeft">14dp</item>
+		<item name="android:paddingRight">14dp</item>
+	</style>
+	<style name="SampleSkin_Alt_Centered_ItemTrackMenu_scene_aa_vis" parent="SampleSkin_Alt_Centered_ItemTrackMenu_scene_aa">
+		<item name="com.maxmpz.audioplayer:baseScene">@com.maxmpz.audioplayer:id/scene_aa</item>
+	</style>
+	<style name="SampleSkin_Alt_Centered_ItemTrackMenu_scene_aa_playing" parent="SampleSkin_Alt_Centered_ItemTrackMenu_scene_aa_vis"/>
+	<style name="SampleSkin_Alt_Centered_ItemTrackLyrics_scene_aa_vis" parent="SampleSkin_Alt_Centered_ItemTrackLyrics_scene_aa">
+		<item name="com.maxmpz.audioplayer:baseScene">@com.maxmpz.audioplayer:id/scene_aa</item>
+		<item name="android:visibility">?com.maxmpz.audioplayer:ItemTrackLyrics_scene_aa_visibility</item>
+	</style>
+	<style name="SampleSkin_Alt_Centered_ItemTrackLyrics_scene_aa_playing" parent="SampleSkin_Alt_Centered_ItemTrackLyrics_scene_aa_vis"/>
 
 </resources>

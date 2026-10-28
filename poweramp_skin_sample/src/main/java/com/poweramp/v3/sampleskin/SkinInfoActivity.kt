@@ -29,6 +29,7 @@ internal fun Context.getPaPak(): String? {
 class SkinInfoActivity : Activity() {
     companion object {
         var skinVerifiedOnce = false
+        private const val REQUEST_THEME_SETTINGS = 1
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,6 +41,14 @@ class SkinInfoActivity : Activity() {
         super.onResume()
         // Disable reverify button if we already successfully verified during this process lifetime
         findViewById<View>(R.id.reverify_button).isEnabled = !skinVerifiedOnce
+    }
+
+    @Deprecated("Deprecated in Android, retained for Poweramp's settings result flow")
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if(requestCode == REQUEST_THEME_SETTINGS) {
+            finish()
+        }
     }
 
 
@@ -98,7 +107,6 @@ class SkinInfoActivity : Activity() {
             .putExtra("open", "theme")
             .putExtra("theme_pak", packageName)
             .putExtra("theme_id", R.style.SampleSkin)
-        startActivityForResult(intent, 1) // startActivityForResult is required for open=theme
-        finish()
+        startActivityForResult(intent, REQUEST_THEME_SETTINGS) // Poweramp authenticates open=theme through the result flow
     }
 }

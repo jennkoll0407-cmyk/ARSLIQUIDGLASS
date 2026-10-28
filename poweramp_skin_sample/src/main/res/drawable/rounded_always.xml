@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<shape xmlns:android="http://schemas.android.com/apk/res/android">
-	<corners android:radius="24dp"/>
-	<solid android:color="?com.maxmpz.audioplayer:colorBgPrimary"/>
-</shape>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item>
+		<shape android:shape="rectangle">
+			<corners android:radius="24dp"/>
+			<solid android:color="@color/ars_glass"/>
+			<stroke
+				android:width="1.5dp"
+				android:color="@color/ars_glass_border"/>
+		</shape>
+	</item>
+	<item
+		android:left="1dp"
+		android:top="1dp"
+		android:right="1dp"
+		android:bottom="10dp">
+		<shape android:shape="rectangle">
+			<corners android:radius="23dp"/>
+			<gradient
+				android:angle="90"
+				android:startColor="@color/ars_glass_highlight"
+				android:centerColor="#10FFFFFF"
+				android:endColor="#00FFFFFF"/>
+		</shape>
+	</item>
+	<item
+		android:left="2dp"
+		android:top="2dp"
+		android:right="2dp"
+		android:bottom="2dp">
+		<shape android:shape="rectangle">
+			<corners android:radius="22dp"/>
+			<solid android:color="#00FFFFFF"/>
+			<stroke android:width="1dp" android:color="@color/ars_glass_inner_border"/>
+		</shape>
+	</item>
+</layer-list>

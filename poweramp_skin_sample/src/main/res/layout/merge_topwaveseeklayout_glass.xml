@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<merge
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	xmlns:w="http://schemas.android.com/apk/res/com.maxmpz.audioplayer"
+	tools:ignore="AndroidUnresolvableTag">
+
+	<com.maxmpz.widget.base.SceneParams
+		w:scene="defaultScene"
+		w:baseScene="defaultScene"
+		w:forId="@com.maxmpz.audioplayer:id/pause"
+		w:jumpVisibility="false"/>
+
+	<com.maxmpz.widget.base.MorphableBusActionButton
+		style="@style/GlassTopPrevCat"/>
+	<SceneParams
+		w:scene="@com.maxmpz.audioplayer:id/scene_playing"
+		w:scene_2="@com.maxmpz.audioplayer:id/scene_vis_temp_ui"
+		w:scene_3="@com.maxmpz.audioplayer:id/scene_vis_w_ui"
+		w:scene_4="@com.maxmpz.audioplayer:id/scene_lyrics"/>
+	<StateAnimParams
+		w:stateAnim="@com.maxmpz.audioplayer:id/anim_seeking"
+		style="@style/GlassTopPlaySeeking"/>
+
+	<com.maxmpz.widget.base.BusActionButton
+		style="@style/GlassTopRewind"/>
+	<SceneParams
+		w:scene="@com.maxmpz.audioplayer:id/scene_playing"
+		w:scene_2="@com.maxmpz.audioplayer:id/scene_vis_temp_ui"
+		w:scene_3="@com.maxmpz.audioplayer:id/scene_vis_w_ui"
+		w:scene_4="@com.maxmpz.audioplayer:id/scene_lyrics"
+		style="@style/GlassTopRewindPlaying"/>
+	<StateAnimParams
+		w:stateAnim="@com.maxmpz.audioplayer:id/anim_seeking"
+		style="@style/GlassTopPlaySeeking"/>
+
+	<com.maxmpz.widget.base.BusActionButton
+		style="@style/GlassTopForward"/>
+	<SceneParams
+		w:scene="@com.maxmpz.audioplayer:id/scene_playing"
+		w:scene_2="@com.maxmpz.audioplayer:id/scene_vis_temp_ui"
+		w:scene_3="@com.maxmpz.audioplayer:id/scene_vis_w_ui"
+		w:scene_4="@com.maxmpz.audioplayer:id/scene_lyrics"
+		style="@style/GlassTopForwardPlaying"/>
+	<StateAnimParams
+		w:stateAnim="@com.maxmpz.audioplayer:id/anim_seeking"
+		style="@style/GlassTopPlaySeeking"/>
+
+	<com.maxmpz.widget.base.MorphableBusActionButton
+		style="@style/GlassTopNextCat"/>
+	<SceneParams
+		w:scene="@com.maxmpz.audioplayer:id/scene_playing"
+		w:scene_2="@com.maxmpz.audioplayer:id/scene_vis_temp_ui"
+		w:scene_3="@com.maxmpz.audioplayer:id/scene_vis_w_ui"
+		w:scene_4="@com.maxmpz.audioplayer:id/scene_lyrics"/>
+	<StateAnimParams
+		w:stateAnim="@com.maxmpz.audioplayer:id/anim_seeking"
+		style="@style/GlassTopPlaySeeking"/>
+
+	<com.maxmpz.widget.base.InvisibleView
+		android:id="@+id/top_probuttons_separator"
+		style="@com.maxmpz.audioplayer:style/TopProbuttonsSeparator"/>
+</merge>
