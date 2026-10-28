@@ -193,26 +193,38 @@
 	<!-- Explicit high-contrast playback-control styles for the Liquid Glass player. -->
 	<style name="ARS_TopPrevCat" parent="com.maxmpz.audioplayer:TopPrevCat">
 		<item name="android:visibility">visible</item>
+		<item name="android:background">@drawable/ars_glass_control</item>
+		<item name="android:elevation">4dp</item>
 		<item name="com.maxmpz.audioplayer:drawableTint">#FFFFFFFF</item>
 	</style>
 	<style name="ARS_TopRw" parent="com.maxmpz.audioplayer:TopRw">
 		<item name="android:visibility">visible</item>
+		<item name="android:background">@drawable/ars_glass_control</item>
+		<item name="android:elevation">4dp</item>
 		<item name="com.maxmpz.audioplayer:drawableTint">#FFFFFFFF</item>
 	</style>
 	<style name="ARS_TopFf" parent="com.maxmpz.audioplayer:TopFf">
 		<item name="android:visibility">visible</item>
+		<item name="android:background">@drawable/ars_glass_control</item>
+		<item name="android:elevation">4dp</item>
 		<item name="com.maxmpz.audioplayer:drawableTint">#FFFFFFFF</item>
 	</style>
 	<style name="ARS_TopNextCat" parent="com.maxmpz.audioplayer:TopNextCat">
 		<item name="android:visibility">visible</item>
+		<item name="android:background">@drawable/ars_glass_control</item>
+		<item name="android:elevation">4dp</item>
 		<item name="com.maxmpz.audioplayer:drawableTint">#FFFFFFFF</item>
 	</style>
 	<style name="ARS_TopPlay" parent="com.maxmpz.audioplayer:TopPlay">
 		<item name="android:visibility">visible</item>
+		<item name="android:background">@drawable/ars_glass_control</item>
+		<item name="android:elevation">4dp</item>
 		<item name="com.maxmpz.audioplayer:drawableTint">#FFFFFFFF</item>
 	</style>
 	<style name="ARS_TopPause" parent="com.maxmpz.audioplayer:TopPause">
 		<item name="android:visibility">visible</item>
+		<item name="android:background">@drawable/ars_glass_control</item>
+		<item name="android:elevation">4dp</item>
 		<item name="com.maxmpz.audioplayer:drawableTint">#FFFFFFFF</item>
 	</style>
 
