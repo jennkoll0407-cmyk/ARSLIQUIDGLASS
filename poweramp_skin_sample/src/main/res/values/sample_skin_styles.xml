@@ -348,6 +348,8 @@
 		<item name="com.maxmpz.audioplayer:aaEffectList">@com.maxmpz.audioplayer:style/ActivityTheme_Black_MilkViewEffect_List</item>
 	</style>
 	<style name="SampleSkin_TransparentTopEqLayout" parent="com.maxmpz.audioplayer:TopEqLayout">
+		<!-- Reuse Poweramp's album-art background effect on the Equalizer screen. -->
+		<item name="com.maxmpz.audioplayer:aaEffectList">@com.maxmpz.audioplayer:style/ActivityTheme_Black_MilkViewEffect_List</item>
 		<item name="android:background">@android:color/transparent</item>
 	</style>
 	<style name="SampleSkin_TransparentEqPagesLayout" parent="com.maxmpz.audioplayer:EqPagesLayout">
