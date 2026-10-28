@@ -344,7 +344,8 @@
 		<item name="com.maxmpz.audioplayer:ItemTrackMenu_scene_bottom_toolbar">@style/ItemTrackMenu_scene_bottom_toolbar</item>
 	</style>
 	<style name="SampleSkin_TransparentTopMilk" parent="com.maxmpz.audioplayer:TopMilk">
-		<item name="com.maxmpz.audioplayer:bgColor">@color/ars_background</item>
+		<!-- Keep the Milk background transparent so the album-art effect can show through. -->
+		<item name="com.maxmpz.audioplayer:bgColor">@android:color/transparent</item>
 		<item name="com.maxmpz.audioplayer:aaEffectList">@com.maxmpz.audioplayer:style/ActivityTheme_Black_MilkViewEffect_List</item>
 	</style>
 	<style name="SampleSkin_TransparentTopEqLayout" parent="com.maxmpz.audioplayer:TopEqLayout">
