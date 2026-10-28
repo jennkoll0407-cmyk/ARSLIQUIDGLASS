@@ -1,0 +1,42 @@
+name: Build ARS Liquid Glass APK
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Configure Poweramp resource path
+        run: printf 'poweramp.apk=Poweramp-build-1026-resources.zip\n' > local.properties
+
+      - name: Make Gradle wrapper executable
+        run: chmod +x ./gradlew
+
+      - name: Build debug APK
+        run: ./gradlew :poweramp_skin_sample:assembleDebug --stacktrace
+
+      - name: Upload debug APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: ARS-Liquid-Glass-debug-apk
+          path: poweramp_skin_sample/build/outputs/apk/debug/*.apk
+          if-no-files-found: error
+          retention-days: 14
