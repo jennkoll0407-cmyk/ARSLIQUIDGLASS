@@ -89,6 +89,12 @@
 		<item name="com.maxmpz.audioplayer:TopEqLayout">@style/SampleSkin_TransparentTopEqLayout</item>
 		<item name="com.maxmpz.audioplayer:EqPagesLayout">@style/SampleSkin_TransparentEqPagesLayout</item>
 		<item name="com.maxmpz.audioplayer:EqTabLayout">@style/SampleSkin_TransparentEqTabLayout</item>
+		<!-- Liquid-glass styling for Equalizer controls -->
+		<item name="com.maxmpz.audioplayer:EqEquButton">@style/ARSGlassEqMainButton</item>
+		<item name="com.maxmpz.audioplayer:EqToneButton">@style/ARSGlassEqMainButton</item>
+		<item name="com.maxmpz.audioplayer:EqLimiterButton">@style/ARSGlassEqMainButton</item>
+		<item name="com.maxmpz.audioplayer:EqEquPresetButtonLayout">@style/ARSGlassEqPresetButton</item>
+		<item name="com.maxmpz.audioplayer:EqMenu">@style/ARSGlassEqMenuButton</item>
 
 		<item name="com.maxmpz.audioplayer:TopAABounds">@style/SampleSkin_PlayerCentered_TopAABounds</item>
 		<item name="com.maxmpz.audioplayer:ItemTrackAAImage_scene_aa">@style/SampleSkin_PlayerCentered_ItemTrackAAImage_scene_aa</item>
@@ -1187,6 +1193,23 @@
 	<style name="ItemTrackMenu_scene_bottom_toolbar" parent="com.maxmpz.audioplayer:ItemTrackMenu_scene_bottom_toolbar">
 		<item name="android:background">@drawable/ripple_inverse_stroke_always_rounded</item>
 		<item name="com.maxmpz.audioplayer:drawableTint">@color/ars_white</item>
+	</style>
+
+
+	<!-- Glass surface for Equ / Tone / Limit; keep Poweramp's native checkbox behavior. -->
+	<style name="ARSGlassEqMainButton" parent="com.maxmpz.audioplayer:EqCheckButton">
+		<item name="android:background">@drawable/ripple_subcontrol_glass</item>
+		<item name="android:textColor">@color/ars_white</item>
+	</style>
+
+	<!-- Glass surface for the preset popup button; inherits native popup/list behavior. -->
+	<style name="ARSGlassEqPresetButton" parent="com.maxmpz.audioplayer:EqEquPresetButtonLayout">
+		<item name="android:background">@drawable/ripple_subcontrol_glass</item>
+	</style>
+
+	<!-- Glass surface for the three-dot menu; preserve its original icon and popup wiring. -->
+	<style name="ARSGlassEqMenuButton" parent="com.maxmpz.audioplayer:EqMenu">
+		<item name="android:background">@drawable/ripple_subcontrol_glass</item>
 	</style>
 
 </resources>
