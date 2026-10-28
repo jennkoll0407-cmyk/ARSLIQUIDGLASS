@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_checked="true" android:drawable="@drawable/eq_active_glass"/>
+    <!-- Active: use the original glass appearance -->
+    <item android:state_checked="true" android:drawable="@drawable/ripple_subcontrol_glass"/>
+    <!-- Inactive: darker than active -->
     <item android:drawable="@drawable/eq_inactive_glass"/>
 </selector>
