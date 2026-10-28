@@ -58,17 +58,17 @@
 		<!-- This disables reduceBottomInset - see @style/TopContainer -->
 		<item name="com.maxmpz.audioplayer:TopContainer">@style/TopContainer</item>
 
-		<!-- Liquid Glass playback controls; explicit sizing keeps every transport button visible. -->
-		<item name="com.maxmpz.audioplayer:TopPlay">@style/ARS_TopPlay</item>
-		<item name="com.maxmpz.audioplayer:TopPlay_scene_playing">@style/ARS_TopPlay_scene_playing</item>
-		<item name="com.maxmpz.audioplayer:TopPause">@style/ARS_TopPause</item>
-		<item name="com.maxmpz.audioplayer:TopPause_scene_playing">@style/ARS_TopPause_scene_playing</item>
-		<item name="com.maxmpz.audioplayer:TopPrevCat">@style/ARS_TopPrevCat</item>
-		<item name="com.maxmpz.audioplayer:TopRw">@style/ARS_TopRw</item>
-		<item name="com.maxmpz.audioplayer:TopRw_scene_playing">@style/ARS_TopRw_scene_playing</item>
-		<item name="com.maxmpz.audioplayer:TopFf">@style/ARS_TopFf</item>
-		<item name="com.maxmpz.audioplayer:TopFf_scene_playing">@style/ARS_TopFf_scene_playing</item>
-		<item name="com.maxmpz.audioplayer:TopNextCat">@style/ARS_TopNextCat</item>
+		<!-- Dedicated playback-control styles. Poweramp supplies the actual functional buttons; this skin only styles and sizes them. -->
+		<item name="com.maxmpz.audioplayer:TopPlay">@style/ARS_ControlPlay</item>
+		<item name="com.maxmpz.audioplayer:TopPlay_scene_playing">@style/ARS_ControlPlayPlaying</item>
+		<item name="com.maxmpz.audioplayer:TopPause">@style/ARS_ControlPause</item>
+		<item name="com.maxmpz.audioplayer:TopPause_scene_playing">@style/ARS_ControlPausePlaying</item>
+		<item name="com.maxmpz.audioplayer:TopPrevCat">@style/ARS_ControlPrevCategory</item>
+		<item name="com.maxmpz.audioplayer:TopRw">@style/ARS_ControlPrevious</item>
+		<item name="com.maxmpz.audioplayer:TopRw_scene_playing">@style/ARS_ControlPreviousPlaying</item>
+		<item name="com.maxmpz.audioplayer:TopFf">@style/ARS_ControlNext</item>
+		<item name="com.maxmpz.audioplayer:TopFf_scene_playing">@style/ARS_ControlNextPlaying</item>
+		<item name="com.maxmpz.audioplayer:TopNextCat">@style/ARS_ControlNextCategory</item>
 
 		<!-- Change Navbar style to make it fill whole width -->
 		<!-- iOS 26-inspired floating Liquid Glass navigation bar -->
@@ -286,6 +286,51 @@
 		<item name="android:layout_marginBottom">24dp</item>
 		<item name="com.maxmpz.audioplayer:layout_maxWidth">48dp</item>
 		<item name="com.maxmpz.audioplayer:layout_maxHeight">48dp</item>
+	</style>
+
+	<style name="ARS_ControlPlay" parent="com.maxmpz.audioplayer:TopPlay">
+		<item name="android:background">@drawable/ars_glass_control</item>
+		<item name="android:layout_width">64dp</item><item name="android:layout_height">64dp</item>
+		<item name="android:visibility">visible</item>
+	</style>
+	<style name="ARS_ControlPlayPlaying" parent="com.maxmpz.audioplayer:TopPlay_scene_playing">
+		<item name="android:background">@drawable/ars_glass_control</item>
+		<item name="android:layout_width">64dp</item><item name="android:layout_height">64dp</item>
+		<item name="android:visibility">visible</item>
+	</style>
+	<style name="ARS_ControlPause" parent="com.maxmpz.audioplayer:TopPause">
+		<item name="android:background">@drawable/ars_glass_control</item>
+		<item name="android:layout_width">64dp</item><item name="android:layout_height">64dp</item>
+		<item name="android:visibility">visible</item>
+	</style>
+	<style name="ARS_ControlPausePlaying" parent="com.maxmpz.audioplayer:TopPause_scene_playing">
+		<item name="android:background">@drawable/ars_glass_control</item>
+		<item name="android:layout_width">64dp</item><item name="android:layout_height">64dp</item>
+		<item name="android:visibility">visible</item>
+	</style>
+	<style name="ARS_ControlPrevCategory" parent="com.maxmpz.audioplayer:TopPrevCat">
+		<item name="android:layout_width">48dp</item><item name="android:layout_height">48dp</item>
+		<item name="android:visibility">visible</item>
+	</style>
+	<style name="ARS_ControlPrevious" parent="com.maxmpz.audioplayer:TopRw">
+		<item name="android:layout_width">48dp</item><item name="android:layout_height">48dp</item>
+		<item name="android:visibility">visible</item>
+	</style>
+	<style name="ARS_ControlPreviousPlaying" parent="com.maxmpz.audioplayer:TopRw_scene_playing">
+		<item name="android:layout_width">48dp</item><item name="android:layout_height">48dp</item>
+		<item name="android:visibility">visible</item>
+	</style>
+	<style name="ARS_ControlNext" parent="com.maxmpz.audioplayer:TopFf">
+		<item name="android:layout_width">48dp</item><item name="android:layout_height">48dp</item>
+		<item name="android:visibility">visible</item>
+	</style>
+	<style name="ARS_ControlNextPlaying" parent="com.maxmpz.audioplayer:TopFf_scene_playing">
+		<item name="android:layout_width">48dp</item><item name="android:layout_height">48dp</item>
+		<item name="android:visibility">visible</item>
+	</style>
+	<style name="ARS_ControlNextCategory" parent="com.maxmpz.audioplayer:TopNextCat">
+		<item name="android:layout_width">48dp</item><item name="android:layout_height">48dp</item>
+		<item name="android:visibility">visible</item>
 	</style>
 
 	<style name="Navbar" parent="com.maxmpz.audioplayer:Navbar">
