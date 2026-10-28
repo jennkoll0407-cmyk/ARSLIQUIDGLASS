@@ -9,6 +9,7 @@
 	<style name="SampleSkin" parent="com.maxmpz.audioplayer:style/ActivityTheme_Black">
 		<item name="android:windowShowWallpaper">false</item>
 		<item name="android:windowBackground">@android:color/transparent</item>
+		<item name="android:popupBackground">@drawable/meta_info_glass_surface</item>
 		<item name="android:textColorPrimary">@color/ars_white</item>
 		<item name="android:textColorSecondary">@color/ars_white_secondary</item>
 		<item name="android:textColorHint">@color/ars_white_secondary</item>
