@@ -179,7 +179,7 @@
 	</style>
 
 	<!--<style name="MyTopEditableSubAaButtonTinted" parent="com.maxmpz.audioplayer:TopEditableSubAaButtonTinted">-->
-	<!--	<item name="com.maxmpz.audioplayer:drawableTint">#00f</item>-->
+	<!--	<item name="com.maxmpz.audioplayer:drawableTint">#F2FFFFFF</item>-->
 
 	<!--</style>-->
 
@@ -290,7 +290,7 @@
 
 	<style name="ItemHeaderShuffleButton" parent="com.maxmpz.audioplayer:ItemHeaderShuffleButton">
 		<item name="android:background">@drawable/ripple_button</item>
-		<item name="com.maxmpz.audioplayer:drawableTint">#f00</item>
+		<item name="com.maxmpz.audioplayer:drawableTint">#F2FFFFFF</item>
 	</style>
 
 	<style name="ItemTextHeaderShuffleButton" parent="com.maxmpz.audioplayer:ItemTextHeaderShuffleButton">
@@ -811,7 +811,7 @@
 	</style>
 
 	<style name="TopMetaInfo" parent="com.maxmpz.audioplayer:TopMetaInfo">
-		<item name="com.maxmpz.audioplayer:lineBackground">@drawable/semi_black_bg</item>
+		<item name="com.maxmpz.audioplayer:lineBackground">@drawable/ars_glass_panel</item>
 	</style>
 
 	<style name="TopMetaInfoLabel" parent="com.maxmpz.audioplayer:TopMetaInfoLabel">
