@@ -37,7 +37,7 @@
 		<item name="com.maxmpz.audioplayer:corners_aa_scene_aa">14dp</item>
 		<item name="com.maxmpz.audioplayer:corners_miniplayer_aa">0dp</item>
 
-		<!--<item name="com.maxmpz.audioplayer:colorBgInverse">#00f</item>--><!-- Change e.g. all background colors globally. See other color* definitions in reference_resources -->
+		<!--<item name="com.maxmpz.audioplayer:colorBgInverse">#F2FFFFFF</item>--><!-- Change e.g. all background colors globally. See other color* definitions in reference_resources -->
 
 		<item name="com.maxmpz.audioplayer:colorStroke">#B8FFFFFF</item><!-- Soft frosted-glass edge highlight -->
 
@@ -174,7 +174,7 @@
 		<item name="com.maxmpz.audioplayer:ItemTrackMenu_scene_bottom_toolbar">@style/ItemTrackMenu_scene_bottom_toolbar</item>
 		<item name="com.maxmpz.audioplayer:ItemTextMenu_scene_bottom_toolbar">@style/ItemTrackMenu_scene_bottom_toolbar</item>
 
-		<!--<item name="com.maxmpz.audioplayer:colorIconLessContrast">#f00</item>-->
+		<!--<item name="com.maxmpz.audioplayer:colorIconLessContrast">#F2FFFFFF</item>-->
 		<!--<item name="com.maxmpz.audioplayer:TopEditableSubAaButtonTinted">@style/MyTopEditableSubAaButtonTinted</item>-->
 	</style>
 
@@ -294,7 +294,7 @@
 	</style>
 
 	<style name="ItemTextHeaderShuffleButton" parent="com.maxmpz.audioplayer:ItemTextHeaderShuffleButton">
-		<item name="com.maxmpz.audioplayer:drawableTint">#00f</item>
+		<item name="com.maxmpz.audioplayer:drawableTint">#F2FFFFFF</item>
 	</style>
 
 	<style name="ItemHeaderPlayButton" parent="com.maxmpz.audioplayer:ItemHeaderPlayButton">
@@ -317,32 +317,32 @@
 
 	<!--
 	<style name="ItemTopTextBackDecorTitle" parent="com.maxmpz.audioplayer:ItemTopTextBackDecorTitle">
-		<item name="android:textColor">#f00</item>
+		<item name="android:textColor">#F2FFFFFF</item>
 	</style>
 	<style name="ItemTopTextBackDecorTitle_scene_header_back_decor" parent="com.maxmpz.audioplayer:ItemTopTextBackDecorTitle_scene_header_back_decor">
-		<item name="android:textColor">#f00</item>
+		<item name="android:textColor">#F2FFFFFF</item>
 	</style>
 
 	<style name="ItemTextBackDecorTitle" parent="com.maxmpz.audioplayer:ItemTextBackDecorTitle">
-		<item name="android:textColor">#f00</item>
+		<item name="android:textColor">#F2FFFFFF</item>
 	</style>
 	<style name="ItemTextBackDecorTitle_scene_header_back_decor" parent="com.maxmpz.audioplayer:ItemTextBackDecorTitle_scene_header_back_decor">
-		<item name="android:textColor">#f00</item>
+		<item name="android:textColor">#F2FFFFFF</item>
 	</style>
 	-->
 
 	<!-- Optional styles for color1 option, color2 option select, and bg_color popup -->
 	<style name="SampleSkin_color1">
-		<item name="android:textColorPrimary">#f00</item>
+		<item name="android:textColorPrimary">#F2FFFFFF</item>
 	</style>
 	<style name="SampleSkin_color_red">
-		<item name="android:textColorPrimary">#f00</item>
+		<item name="android:textColorPrimary">#F2FFFFFF</item>
 	</style>
 	<style name="SampleSkin_color_green">
 		<item name="android:textColorPrimary">#0f0</item>
 	</style>
 	<style name="SampleSkin_color_blue">
-		<item name="android:textColorPrimary">#00f</item>
+		<item name="android:textColorPrimary">#F2FFFFFF</item>
 	</style>
 
 	<style name="SampleSkin_bg_color_red">
@@ -820,7 +820,7 @@
 
 	<style name="ItemTrackMenu_scene_bottom_toolbar" parent="com.maxmpz.audioplayer:ItemTrackMenu_scene_bottom_toolbar">
 		<item name="android:background">@drawable/ripple_inverse_stroke_always_rounded</item>
-		<item name="com.maxmpz.audioplayer:drawableTint">#f00</item>
+		<item name="com.maxmpz.audioplayer:drawableTint">#F2FFFFFF</item>
 	</style>
 
 </resources>
