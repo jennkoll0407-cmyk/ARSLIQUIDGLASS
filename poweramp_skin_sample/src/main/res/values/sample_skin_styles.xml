@@ -7,7 +7,7 @@
 	     Poweramp styles/attributes/values start with "com.maxmpz.audioplayer:", otherwise syntax is the standard Android xml resource syntax
 	 -->
 	<style name="SampleSkin" parent="com.maxmpz.audioplayer:style/ActivityTheme_Black">
-		<item name="android:windowShowWallpaper">true</item>
+		<item name="android:windowShowWallpaper">false</item>
 		<item name="android:windowBackground">@android:color/transparent</item>
 		<item name="android:textColorPrimary">@color/ars_white</item>
 		<item name="android:textColorSecondary">@color/ars_white_secondary</item>
