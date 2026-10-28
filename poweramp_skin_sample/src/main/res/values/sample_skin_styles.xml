@@ -34,12 +34,12 @@
 		<item name="com.maxmpz.audioplayer:corners_aa_other_grid_zoomed">matchHeight</item>
 
 		<item name="com.maxmpz.audioplayer:corners_aa_tracks_small">2dp</item>
-		<item name="com.maxmpz.audioplayer:corners_aa_scene_aa">2dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_scene_aa">14dp</item>
 		<item name="com.maxmpz.audioplayer:corners_miniplayer_aa">0dp</item>
 
 		<!--<item name="com.maxmpz.audioplayer:colorBgInverse">#00f</item>--><!-- Change e.g. all background colors globally. See other color* definitions in reference_resources -->
 
-		<item name="com.maxmpz.audioplayer:colorStroke">#ddd</item><!-- Make stroked buttons much less contrasted -->
+		<item name="com.maxmpz.audioplayer:colorStroke">#B8FFFFFF</item><!-- Soft frosted-glass edge highlight -->
 
 		<item name="com.maxmpz.audioplayer:navbar_elevation">8dp</item><!-- Increase elevation for navbar -->
 
