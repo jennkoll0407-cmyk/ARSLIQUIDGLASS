@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<level-list xmlns:android="http://schemas.android.com/apk/res/android"
+	android:enterFadeDuration="100"
+	android:exitFadeDuration="180">
+	<item
+		android:minLevel="16"
+		android:maxLevel="10000"
+		android:drawable="@drawable/meta_info_glass_surface">
+	</item>
+	<item
+		android:minLevel="0"
+		android:maxLevel="0"
+		android:drawable="@drawable/ripple_subcontrol_glass" />
+</level-list>

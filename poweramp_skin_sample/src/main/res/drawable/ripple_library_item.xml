@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+	android:color="@color/ars_ripple">
+	<item android:drawable="@drawable/library_item_glass"/>
+	<item
+		android:id="@android:id/mask"
+		android:left="6dp"
+		android:top="2dp"
+		android:right="6dp"
+		android:bottom="2dp">
+		<shape android:shape="rectangle">
+			<corners android:radius="24dp"/>
+			<solid android:color="#FFFFFFFF"/>
+		</shape>
+	</item>
+</ripple>

@@ -1,18 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- targetBuild is important. Some specific values are checked and layer of additional styles may be applied.
      See reference_resources/values/legacy-styles.xml -->
-<skins targetBuild="1003" verification="true">
-	<!-- NOTE: forceGlobalOptions=true means global options (by default in styles-options.xml) will force-override base skin attributes.
-
-	     By default, global options do not override base skin theme, just add to it,
-	     but for more complicated cases, overriding may be required (e.g. for our own OptionCounter here)-->
+<skins targetBuild="1003">
+	<!-- Leave forceGlobalOptions unset so skin-specific player scene styles take precedence over global option defaults. -->
 
 	<skin
 		name="@string/skin_sample"
 		author="@string/skin_author"
 		description="@string/skin_sample_description"
 		style="@style/SampleSkin"
-		forceGlobalOptions="true"
 		darkMode="@style/SampleSkinDark"
 		allowNewPadding="true"
 	>
@@ -60,11 +56,15 @@
 			<radio
 				key="font"
 				name="@string/skin_font"
-				defaultValue=""
+				defaultValue="@com.maxmpz.audioplayer:style/ActivityTheme_Whitepro_AltFont"
 			>
 				<option
 					name="@string/_default"
 					overlapStyle=""
+				/>
+				<option
+					name="@string/skin_alt_font_poweramp"
+					overlapStyle="@com.maxmpz.audioplayer:style/ActivityTheme_Whitepro_AltFont"
 				/>
 				<option
 					name="@string/skin_opensans_font"
@@ -83,6 +83,13 @@
 			name="@string/skin_static_seekbar"
 			overlapStyle="@com.maxmpz.audioplayer:style/ActivityTheme_Whitepro_StaticSeekbar"
 			checkedByDefault="false"
+		/>
+		<option
+			key="more_buttons"
+			name="@string/skin_more_buttons"
+			summary="@string/skin_summary_more_buttons"
+			overlapStyle="@style/SampleSkin_MoreButtons"
+			checkedByDefault="true"
 		/>
 		<msg
 			icon="@drawable/check_big"
@@ -111,17 +118,10 @@
 			defaultValue=""
 		>
 
-		<!-- Alternative layout which uses default Poweramp "alternative" layout styles.
+		<!-- Alternative layout keeps Poweramp's layout styles but overrides white theme surfaces.
 		     For the custom detailed alternative layout implementation, see SampleSkinAAA.
 
-		     overlapAttr here means we'll add extra style based on current overlap_alt_layout attribute value, which is:
-		     - @com.maxmpz.audioplayer:style/ActivityTheme_Whitepro_AltLayout - by default
-		     - @com.maxmpz.audioplayer:style/ActivityTheme_Whitepro_AltLayout_StarsMenu - for OptionRatingStarsMenu
-
-		     You can check those styles in reference_resources.
-		     Alternative styles change main and items layout as needed - no further redefines are needed.
-		     If you want more control over alternative layout, see SampleSkinAAA or new SampleSkin_Alt -->
-		-->
+		     The skin-specific overlay keeps the main background transparent and uses glass surfaces/text contrast. -->
 			<option
 				name="@string/skin_disabled"
 				icon="@drawable/default_layout"
@@ -130,7 +130,7 @@
 			<option
 				name="@string/skin_alt_layout_default"
 				icon="@drawable/alt_layout"
-				overlapAttr="@com.maxmpz.audioplayer:attr/overlap_alt_layout"
+				overlapStyle="@style/SampleSkin_AltLayout"
 			/>
 
 			<option
@@ -295,7 +295,7 @@
 				/>
 				<option
 					name="0.85"
-					overlapSt5yle="@style/SampleSkin_aaScale_085"
+					overlapStyle="@style/SampleSkin_aaScale_085"
 				/>
 				<option
 					name="0.9"
@@ -576,7 +576,6 @@
 		author="@string/skin_author"
 		description="@string/skin_sample_description"
 		style="@style/SampleSkinDark"
-		forceGlobalOptions="true"
 		lightMode="@style/SampleSkin"
 	>
 		<!-- Empty skin just to demonstrate follow system light/dark mode.
