@@ -7,39 +7,41 @@
 	     Poweramp styles/attributes/values start with "com.maxmpz.audioplayer:", otherwise syntax is the standard Android xml resource syntax
 	 -->
 	<style name="SampleSkin" parent="com.maxmpz.audioplayer:style/Base_ActivityTheme_Default">
-		<item name="com.maxmpz.audioplayer:corners_navbar">0dp</item>
+		<item name="com.maxmpz.audioplayer:corners_navbar">18dp</item>
 
-		<item name="com.maxmpz.audioplayer:corners_popup">2dp</item>
-		<item name="com.maxmpz.audioplayer:corners_medium">4dp</item>
-		<item name="com.maxmpz.audioplayer:corners_medium_plus">4dp</item>
-		<item name="com.maxmpz.audioplayer:corners_searchbar">4dp</item>
-		<item name="com.maxmpz.audioplayer:corners_mini">0dp</item>
-		<item name="com.maxmpz.audioplayer:corners_large">8dp</item>
-		<item name="com.maxmpz.audioplayer:corners_small">1dp</item>
+		<item name="com.maxmpz.audioplayer:corners_popup">22dp</item>
+		<item name="com.maxmpz.audioplayer:corners_medium">16dp</item>
+		<item name="com.maxmpz.audioplayer:corners_medium_plus">18dp</item>
+		<item name="com.maxmpz.audioplayer:corners_searchbar">18dp</item>
+		<item name="com.maxmpz.audioplayer:corners_mini">10dp</item>
+		<item name="com.maxmpz.audioplayer:corners_large">24dp</item>
+		<item name="com.maxmpz.audioplayer:corners_small">8dp</item>
 
-		<item name="com.maxmpz.audioplayer:corners_aa_tracks">2dp</item>
-		<item name="com.maxmpz.audioplayer:corners_aa_albums">2dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_tracks">12dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_albums">12dp</item>
 		<item name="com.maxmpz.audioplayer:corners_aa_other">matchHeight</item>
 
-		<item name="com.maxmpz.audioplayer:corners_aa_tracks_zoomed">2dp</item>
-		<item name="com.maxmpz.audioplayer:corners_aa_albums_zoomed">2dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_tracks_zoomed">12dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_albums_zoomed">12dp</item>
 		<item name="com.maxmpz.audioplayer:corners_aa_other_zoomed">matchHeight</item>
 
-		<item name="com.maxmpz.audioplayer:corners_aa_tracks_grid">2dp</item>
-		<item name="com.maxmpz.audioplayer:corners_aa_albums_grid">2dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_tracks_grid">12dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_albums_grid">12dp</item>
 		<item name="com.maxmpz.audioplayer:corners_aa_other_grid">matchHeight</item>
 
-		<item name="com.maxmpz.audioplayer:corners_aa_tracks_grid_zoomed">2dp</item>
-		<item name="com.maxmpz.audioplayer:corners_aa_albums_grid_zoomed">2dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_tracks_grid_zoomed">12dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_albums_grid_zoomed">12dp</item>
 		<item name="com.maxmpz.audioplayer:corners_aa_other_grid_zoomed">matchHeight</item>
 
-		<item name="com.maxmpz.audioplayer:corners_aa_tracks_small">2dp</item>
-		<item name="com.maxmpz.audioplayer:corners_aa_scene_aa">2dp</item>
-		<item name="com.maxmpz.audioplayer:corners_miniplayer_aa">0dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_tracks_small">10dp</item>
+		<item name="com.maxmpz.audioplayer:corners_aa_scene_aa">14dp</item>
+		<item name="com.maxmpz.audioplayer:corners_miniplayer_aa">12dp</item>
 
-		<!--<item name="com.maxmpz.audioplayer:colorBgInverse">#00f</item>--><!-- Change e.g. all background colors globally. See other color* definitions in reference_resources -->
+		<item name="com.maxmpz.audioplayer:colorBgPrimary">#080F1A</item>
+		<item name="com.maxmpz.audioplayer:colorBgNavbar">#0A1726</item>
+		<item name="com.maxmpz.audioplayer:colorAABgColor">#172638</item><!-- Change e.g. all background colors globally. See other color* definitions in reference_resources -->
 
-		<item name="com.maxmpz.audioplayer:colorStroke">#ddd</item><!-- Make stroked buttons much less contrasted -->
+		<item name="com.maxmpz.audioplayer:colorStroke">#66FFFFFF</item><!-- Subtle translucent glass edge -->
 
 		<item name="com.maxmpz.audioplayer:navbar_elevation">8dp</item><!-- Increase elevation for navbar -->
 
