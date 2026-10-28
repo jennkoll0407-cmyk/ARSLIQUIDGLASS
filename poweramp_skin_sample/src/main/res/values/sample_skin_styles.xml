@@ -366,6 +366,7 @@
 		<item name="android:background">@android:color/transparent</item>
 	</style>
 	<style name="SampleSkin_GlassItemPopupMenuItemsLayout" parent="com.maxmpz.audioplayer:ItemPopupMenuItemsLayout">
+		<!-- Keep popup surfaces self-contained so transparent app areas cannot reveal the system wallpaper. -->
 		<item name="android:background">@drawable/meta_info_glass_surface</item>
 		<item name="android:paddingLeft">8dp</item>
 		<item name="android:paddingRight">8dp</item>
