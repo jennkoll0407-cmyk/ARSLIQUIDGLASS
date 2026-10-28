@@ -1201,18 +1201,18 @@
 	<style name="ARSGlassEqMainButton" parent="com.maxmpz.audioplayer:EqEquButton">
 		<item name="android:background">@drawable/eq_control_glass_selector</item>
 		<item name="android:stateListAnimator">@animator/eq_button_scale_animator</item>
-		<item name="android:textColor">@color/ars_white</item>
+		<item name="android:textColor">@color/eq_button_text_selector</item>
 	</style>
 
 	<style name="ARSGlassEqToneButton" parent="com.maxmpz.audioplayer:EqToneButton">
 		<item name="android:background">@drawable/eq_control_glass_selector</item>
 		<item name="android:stateListAnimator">@animator/eq_button_scale_animator</item>
-		<item name="android:textColor">@color/ars_white</item>
+		<item name="android:textColor">@color/eq_button_text_selector</item>
 	</style>
 	<style name="ARSGlassEqLimiterButton" parent="com.maxmpz.audioplayer:EqLimiterButton">
 		<item name="android:background">@drawable/eq_control_glass_selector</item>
 		<item name="android:stateListAnimator">@animator/eq_button_scale_animator</item>
-		<item name="android:textColor">@color/ars_white</item>
+		<item name="android:textColor">@color/eq_button_text_selector</item>
 	</style>
 
 	<!-- Glass surface for the preset popup button; inherits native popup/list behavior. -->
