@@ -192,6 +192,7 @@
 
 		<!-- Override menu button in just scene_header scene -->
 		<item name="com.maxmpz.audioplayer:ItemTrackMenu_scene_header">@style/ItemTrackMenu_scene_header</item>
+		<item name="com.maxmpz.audioplayer:ItemTextMenu_scene_header">@style/ItemTextMenu_scene_header</item>
 
 		<!-- Few more adjustments are needed for "back decors" as they should have same layout as title for proper animations -->
 		<!-- Also, we override all possible backdecor styles/scenes here just to demonstrate how to apply some styles too all possible
@@ -681,16 +682,16 @@
 
 	<!-- SceneParams controls the visible header positions; override these styles for scene_header. -->
 	<style name="ItemTextHeaderShuffleButton_scene_header" parent="com.maxmpz.audioplayer:ItemTextHeaderShuffleButton_scene_header">
-		<item name="android:layout_marginTop">-6dp</item>
+		<item name="android:translationY">-6dp</item>
 	</style>
 	<style name="ItemTextHeaderPlayButton_scene_header" parent="com.maxmpz.audioplayer:ItemTextHeaderPlayButton_scene_header">
-		<item name="android:layout_marginTop">-6dp</item>
+		<item name="android:translationY">-6dp</item>
 	</style>
 	<style name="ItemTextHeaderSearchButton_scene_header" parent="com.maxmpz.audioplayer:ItemTextHeaderSearchButton_scene_header">
-		<item name="android:layout_marginTop">-6dp</item>
+		<item name="android:translationY">-6dp</item>
 	</style>
 	<style name="ItemTextHeaderSelectButton_scene_header" parent="com.maxmpz.audioplayer:ItemTextHeaderSelectButton_scene_header">
-		<item name="android:layout_marginTop">-6dp</item>
+		<item name="android:translationY">-6dp</item>
 	</style>
 
 	<!-- Library's text-header buttons are real views: move them with translationY on the view styles. -->
@@ -744,6 +745,10 @@
 		<item name="com.maxmpz.audioplayer:drawableTint">@color/ars_white</item>
 		<!-- By default, view params like background are not applied for ItemTrackMenu during scene transitions, but as we want to change background, set applyViewParams to true -->
 		<item name="com.maxmpz.audioplayer:applyViewParams">true</item>
+	</style>
+
+	<style name="ItemTextMenu_scene_header" parent="com.maxmpz.audioplayer:ItemTextMenu_scene_header">
+		<item name="android:translationY">-6dp</item>
 	</style>
 
 	<!--
