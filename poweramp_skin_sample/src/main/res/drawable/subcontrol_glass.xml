@@ -1,53 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-	<item>
-		<shape android:shape="rectangle">
-			<corners android:radius="20dp"/>
-			<solid android:color="@color/ars_glass"/>
-			<stroke android:width="1.5dp" android:color="@color/ars_glass_border"/>
-		</shape>
-	</item>
-	<!-- Stronger upper reflection and a long transparent falloff for a polished glass edge. -->
-	<item
-		android:left="1dp"
-		android:top="1dp"
-		android:right="1dp"
-		android:bottom="12dp">
-		<shape android:shape="rectangle">
-			<corners android:radius="19dp"/>
-			<gradient
-				android:angle="90"
-				android:startColor="@color/ars_glass_highlight"
-				android:centerColor="#18FFFFFF"
-				android:endColor="#00FFFFFF"/>
-		</shape>
-	</item>
-	<item
-		android:left="2dp"
-		android:top="2dp"
-		android:right="2dp"
-		android:bottom="2dp">
-		<shape android:shape="rectangle">
-			<corners android:radius="18dp"/>
-			<solid android:color="#00FFFFFF"/>
-			<stroke android:width="1dp" android:color="@color/ars_glass_inner_border"/>
-		</shape>
-	</item>
-	<!-- Curved optical reflection: restrained upper-left sheen and lower-right rim light. -->
-	<item
-		android:left="1dp"
-		android:top="1dp"
-		android:right="1dp"
-		android:bottom="1dp">
-		<shape android:shape="rectangle">
-			<corners android:radius="19dp" />
-			<gradient
-				android:type="linear"
-				android:angle="315"
-				android:startColor="#38FFFFFF"
-				android:centerColor="#04FFFFFF"
-				android:endColor="#22FFFFFF" />
-		</shape>
-	</item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="20dp" />
+            <solid android:color="@color/ars_glass" />
+            <stroke android:width="1.5dp" android:color="@color/ars_glass_border" />
+        </shape>
+    </item>
+    <!-- Bright upper lip with a long, soft falloff. -->
+    <item android:left="1dp" android:top="1dp" android:right="1dp" android:bottom="8dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="19dp" />
+            <gradient android:angle="90"
+                android:startColor="#70FFFFFF"
+                android:centerColor="#20FFFFFF"
+                android:endColor="#00FFFFFF" />
+        </shape>
+    </item>
+    <!-- Low-intensity interior shading makes the transparent face feel curved. -->
+    <item android:left="2dp" android:top="3dp" android:right="2dp" android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="18dp" />
+            <gradient android:angle="270"
+                android:startColor="#00FFFFFF"
+                android:centerColor="#06FFFFFF"
+                android:endColor="#28202A35" />
+        </shape>
+    </item>
+    <!-- Fine inner rim, visually separated from the outside stroke. -->
+    <item android:left="2dp" android:top="2dp" android:right="2dp" android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="18dp" />
+            <solid android:color="#00FFFFFF" />
+            <stroke android:width="1dp" android:color="#72FFFFFF" />
+        </shape>
+    </item>
+    <!-- Diagonal reflected light across the glass face. -->
+    <item android:left="3dp" android:top="3dp" android:right="3dp" android:bottom="3dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="17dp" />
+            <gradient android:angle="315"
+                android:startColor="#38FFFFFF"
+                android:centerColor="#00FFFFFF"
+                android:endColor="#18FFFFFF" />
+        </shape>
+    </item>
 </layer-list>
