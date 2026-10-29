@@ -1,52 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <!-- Outer shell: the first rim follows the component's full rounded contour. -->
+    <!-- Borderless translucent glass body; depth comes from light and shade, not strokes. -->
     <item>
         <shape android:shape="rectangle">
             <corners android:radius="20dp" />
             <solid android:color="@color/ars_glass" />
-            <stroke android:width="1.5dp" android:color="@color/ars_glass_border" />
         </shape>
     </item>
-    <!-- Gradient bevel aligned to the outer rim, rather than floating across the face. -->
+    <!-- Soft outer-edge reflection, inset to follow the rounded contour. -->
     <item android:left="1dp" android:top="1dp" android:right="1dp" android:bottom="1dp">
         <shape android:shape="rectangle">
             <corners android:radius="19dp" />
             <gradient android:angle="270"
-                android:startColor="#A0FFFFFF"
-                android:centerColor="#26FFFFFF"
-                android:endColor="#38202A35" />
-            <stroke android:width="1dp" android:color="#58FFFFFF" />
+                android:startColor="#70FFFFFF"
+                android:centerColor="#12FFFFFF"
+                android:endColor="#30202A35" />
         </shape>
     </item>
-    <!-- Narrow upper highlight follows the same inset contour as the rim. -->
+    <!-- Convex upper highlight fades naturally into the transparent face. -->
     <item android:left="2dp" android:top="2dp" android:right="2dp" android:bottom="5dp">
         <shape android:shape="rectangle">
             <corners android:radius="18dp" />
             <gradient android:angle="90"
-                android:startColor="#62FFFFFF"
+                android:startColor="#58FFFFFF"
                 android:centerColor="#18FFFFFF"
                 android:endColor="#00FFFFFF" />
         </shape>
     </item>
-    <!-- Inner bevel: its own lighter upper edge and shaded lower edge create depth. -->
-    <item android:left="2dp" android:top="2dp" android:right="2dp" android:bottom="2dp">
+    <!-- Internal lower shading gives the surface volume without drawing an outline. -->
+    <item android:left="2dp" android:top="3dp" android:right="2dp" android:bottom="2dp">
         <shape android:shape="rectangle">
             <corners android:radius="18dp" />
             <gradient android:angle="270"
-                android:startColor="#38FFFFFF"
-                android:centerColor="#08FFFFFF"
-                android:endColor="#1E202A35" />
-            <stroke android:width="1dp" android:color="#72FFFFFF" />
+                android:startColor="#00FFFFFF"
+                android:centerColor="#06FFFFFF"
+                android:endColor="#25202A35" />
         </shape>
     </item>
-    <!-- Keep the central glass clear; a faint diagonal reflection only crosses the face. -->
+    <!-- Very subtle diagonal sheen; no stroke or hard inner border. -->
     <item android:left="4dp" android:top="4dp" android:right="4dp" android:bottom="4dp">
         <shape android:shape="rectangle">
             <corners android:radius="16dp" />
             <gradient android:angle="315"
-                android:startColor="#22FFFFFF"
+                android:startColor="#26FFFFFF"
                 android:centerColor="#00FFFFFF"
                 android:endColor="#0CFFFFFF" />
         </shape>
