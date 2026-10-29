@@ -8,6 +8,7 @@
 			<stroke android:width="1.5dp" android:color="@color/ars_glass_border"/>
 		</shape>
 	</item>
+	<!-- Stronger upper reflection and a long transparent falloff for a polished glass edge. -->
 	<item
 		android:left="1dp"
 		android:top="1dp"
@@ -18,6 +19,7 @@
 			<gradient
 				android:angle="90"
 				android:startColor="@color/ars_glass_highlight"
+				android:centerColor="#18FFFFFF"
 				android:endColor="#00FFFFFF"/>
 		</shape>
 	</item>
