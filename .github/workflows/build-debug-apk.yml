@@ -1,8 +1,6 @@
 name: Build ARS Liquid Glass APK
 
 on:
-  push:
-    branches: [master, Liquid]
   workflow_dispatch:
 
 permissions:
