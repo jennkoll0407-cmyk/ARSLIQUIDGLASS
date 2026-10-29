@@ -25,31 +25,4 @@
         </shape>
     </item>
 
-    <!-- Partial glass reflections: accents cover only a small section of the contour. -->
-    <item android:left="1dp" android:top="1dp" android:right="1dp" android:bottom="1dp">
-        <shape android:shape="rectangle">
-            <corners android:radius="35dp" />
-            <gradient android:type="radial" android:gradientRadius="24dp" android:centerX="0.06" android:centerY="0.04" android:startColor="#30FFFFFF" android:centerColor="#08FFFFFF" android:endColor="#00FFFFFF" />
-        </shape>
-    </item>
-    <!-- Upper-left strip: short, soft highlight, not a complete frame. -->
-    <item android:left="2dp" android:top="1dp" android:right="42dp" android:height="3dp" android:gravity="top">
-        <shape android:shape="rectangle">
-            <corners android:radius="2dp" />
-            <gradient android:angle="0" android:startColor="#00FFFFFF" android:centerColor="#40FFFFFF" android:endColor="#00FFFFFF" />
-        </shape>
-    </item>
-    <item android:left="1dp" android:top="2dp" android:bottom="22dp" android:width="3dp" android:gravity="left">
-        <shape android:shape="rectangle">
-            <corners android:radius="2dp" />
-            <gradient android:angle="270" android:startColor="#40FFFFFF" android:centerColor="#18FFFFFF" android:endColor="#00FFFFFF" />
-        </shape>
-    </item>
-    <!-- Small secondary glint at the opposite corner. -->
-    <item android:right="2dp" android:bottom="2dp" android:left="68dp" android:height="2dp" android:gravity="bottom">
-        <shape android:shape="rectangle">
-            <corners android:radius="2dp" />
-            <gradient android:angle="0" android:startColor="#00FFFFFF" android:centerColor="#24FFFFFF" android:endColor="#00FFFFFF" />
-        </shape>
-    </item>
 </layer-list>
