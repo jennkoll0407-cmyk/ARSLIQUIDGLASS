@@ -485,7 +485,7 @@
 		<item name="android:background">@null</item>
 	</style>
 	<style name="GlassTopControlLayout" parent="com.maxmpz.audioplayer:TopBaseButtonLayout">
-		<item name="android:background">@drawable/ripple_button</item>
+		<item name="android:background">@drawable/ripple_glass_control</item>
 		<item name="com.maxmpz.audioplayer:drawableTint">@color/ars_white</item>
 	</style>
 	<style name="GlassTopPlayPlaying" parent="com.maxmpz.audioplayer:TopPlay_scene_playing">
@@ -516,7 +516,7 @@
 		<item name="android:background">@drawable/ripple_glass_circle</item>
 	</style>
 	<style name="GlassTopRewind" parent="com.maxmpz.audioplayer:TopRw">
-		<item name="android:background">@drawable/ripple_button</item>
+		<item name="android:background">@drawable/ripple_glass_control</item>
 		<item name="android:drawable">@drawable/ars_rewind_icon</item>
 		<item name="android:minWidth">48dp</item>
 		<item name="android:minHeight">48dp</item>
@@ -525,7 +525,7 @@
 		<item name="com.maxmpz.audioplayer:layout_maxHeight">52dp</item>
 	</style>
 	<style name="GlassTopRewindPlaying" parent="com.maxmpz.audioplayer:TopRw_scene_playing">
-		<item name="android:background">@drawable/ripple_button</item>
+		<item name="android:background">@drawable/ripple_glass_control</item>
 		<item name="android:drawable">@drawable/ars_rewind_icon</item>
 		<item name="android:minWidth">48dp</item>
 		<item name="android:minHeight">48dp</item>
@@ -534,7 +534,7 @@
 		<item name="com.maxmpz.audioplayer:layout_maxHeight">52dp</item>
 	</style>
 	<style name="GlassTopForward" parent="com.maxmpz.audioplayer:TopFf">
-		<item name="android:background">@drawable/ripple_button</item>
+		<item name="android:background">@drawable/ripple_glass_control</item>
 		<item name="android:drawable">@drawable/ars_forward_icon</item>
 		<item name="android:minWidth">48dp</item>
 		<item name="android:minHeight">48dp</item>
@@ -543,7 +543,7 @@
 		<item name="com.maxmpz.audioplayer:layout_maxHeight">52dp</item>
 	</style>
 	<style name="GlassTopForwardPlaying" parent="com.maxmpz.audioplayer:TopFf_scene_playing">
-		<item name="android:background">@drawable/ripple_button</item>
+		<item name="android:background">@drawable/ripple_glass_control</item>
 		<item name="android:drawable">@drawable/ars_forward_icon</item>
 		<item name="android:minWidth">48dp</item>
 		<item name="android:minHeight">48dp</item>
@@ -552,7 +552,7 @@
 		<item name="com.maxmpz.audioplayer:layout_maxHeight">52dp</item>
 	</style>
 	<style name="GlassTopPrevCat" parent="com.maxmpz.audioplayer:TopPrevCat">
-		<item name="android:background">@drawable/ripple_button</item>
+		<item name="android:background">@drawable/ripple_glass_control</item>
 		<item name="android:drawable">@drawable/ars_previous_icon</item>
 		<item name="android:gravity">center</item>
 		<item name="com.maxmpz.audioplayer:drawableWidth">24dp</item>
@@ -561,7 +561,7 @@
 		<item name="android:minHeight">44dp</item>
 	</style>
 	<style name="GlassTopNextCat" parent="com.maxmpz.audioplayer:TopNextCat">
-		<item name="android:background">@drawable/ripple_button</item>
+		<item name="android:background">@drawable/ripple_glass_control</item>
 		<item name="android:drawable">@drawable/ars_next_icon</item>
 		<item name="android:gravity">center</item>
 		<item name="com.maxmpz.audioplayer:drawableWidth">24dp</item>
