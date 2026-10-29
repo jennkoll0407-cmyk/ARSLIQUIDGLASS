@@ -180,6 +180,13 @@
 
 		<!-- The text header button (text header => header without background image for categories like Albums, Playlists, etc. -->
 		<item name="com.maxmpz.audioplayer:ItemTextHeaderShuffleButton">@style/ItemTextHeaderShuffleButton</item>
+		<item name="com.maxmpz.audioplayer:ItemTextHeaderShuffleButton_scene_header">@style/ItemTextHeaderShuffleButton_scene_header</item>
+		<item name="com.maxmpz.audioplayer:ItemTextHeaderPlayButton">@style/ItemTextHeaderPlayButton</item>
+		<item name="com.maxmpz.audioplayer:ItemTextHeaderPlayButton_scene_header">@style/ItemTextHeaderPlayButton_scene_header</item>
+		<item name="com.maxmpz.audioplayer:ItemTextHeaderSearchButton">@style/ItemTextHeaderSearchButton</item>
+		<item name="com.maxmpz.audioplayer:ItemTextHeaderSearchButton_scene_header">@style/ItemTextHeaderSearchButton_scene_header</item>
+		<item name="com.maxmpz.audioplayer:ItemTextHeaderSelectButton">@style/ItemTextHeaderSelectButton</item>
+		<item name="com.maxmpz.audioplayer:ItemTextHeaderSelectButton_scene_header">@style/ItemTextHeaderSelectButton_scene_header</item>
 
 
 		<!-- Override menu button in just scene_header scene -->
@@ -673,6 +680,20 @@
 
 	<style name="ItemTextHeaderShuffleButton" parent="com.maxmpz.audioplayer:ItemTextHeaderShuffleButton">
 		<item name="com.maxmpz.audioplayer:drawableTint">@color/ars_white</item>
+	</style>
+
+	<!-- Library uses ItemTextHeader* styles; their scene_header variants control the visible header positions. -->
+	<style name="ItemTextHeaderShuffleButton_scene_header" parent="com.maxmpz.audioplayer:ItemTextHeaderShuffleButton_scene_header">
+		<item name="android:translationY">-6dp</item>
+	</style>
+	<style name="ItemTextHeaderPlayButton_scene_header" parent="com.maxmpz.audioplayer:ItemTextHeaderPlayButton_scene_header">
+		<item name="android:translationY">-6dp</item>
+	</style>
+	<style name="ItemTextHeaderSearchButton_scene_header" parent="com.maxmpz.audioplayer:ItemTextHeaderSearchButton_scene_header">
+		<item name="android:translationY">-6dp</item>
+	</style>
+	<style name="ItemTextHeaderSelectButton_scene_header" parent="com.maxmpz.audioplayer:ItemTextHeaderSelectButton_scene_header">
+		<item name="android:translationY">-6dp</item>
 	</style>
 	<style name="ItemHeaderShuffleButton_scene_header" parent="com.maxmpz.audioplayer:ItemHeaderShuffleButton_scene_header">
 		<item name="android:translationY">-6dp</item>
