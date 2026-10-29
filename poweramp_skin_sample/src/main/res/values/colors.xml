@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
-	<color name="red">#f00</color>
-	<color name="green">#0f0</color>
-	<color name="blue">#00f</color>
+    <color name="red">#f00</color>
+    <color name="green">#0f0</color>
+    <color name="blue">#00f</color>
 
-	<!-- Clear, neutral glass: brighter optical edges with a restrained white body. -->
-	<color name="ars_background">#00000000</color>
-	<color name="ars_glass">#26FFFFFF</color>
-	<color name="ars_glass_highlight">#55FFFFFF</color>
-	<color name="ars_glass_border">#B8FFFFFF</color>
-	<color name="ars_glass_inner_border">#55FFFFFF</color>
-	<color name="ars_ripple">#44FFFFFF</color>
-	<color name="ars_white">#F5F8FC</color>
-	<color name="ars_white_secondary">#D9E5F0</color>
+    <!-- Borderless neutral glass; keep the color aliases transparent for all shared effects. -->
+    <color name="ars_background">#00000000</color>
+    <color name="ars_glass">#26FFFFFF</color>
+    <color name="ars_glass_highlight">#55FFFFFF</color>
+    <color name="ars_glass_border">#00FFFFFF</color>
+    <color name="ars_glass_inner_border">#00FFFFFF</color>
+    <color name="ars_ripple">#44FFFFFF</color>
+    <color name="ars_white">#F5F8FC</color>
+    <color name="ars_white_secondary">#D9E5F0</color>
 </resources>
