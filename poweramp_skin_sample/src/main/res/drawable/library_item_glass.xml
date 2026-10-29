@@ -25,17 +25,18 @@
         </shape>
     </item>
 
-    <!-- Thin oval rim highlights with fully rounded ends. -->
-    <item android:left="12dp" android:top="1dp" android:right="12dp" android:height="4dp" android:gravity="top">
-        <shape android:shape="oval">
-            <corners android:radius="100dp" />
-            <gradient android:angle="270" android:startColor="#42FFFFFF" android:centerColor="#18FFFFFF" android:endColor="#00FFFFFF" />
+    <!-- Contour-following surface strip and full perimeter rim. -->
+    <item android:left="1dp" android:top="1dp" android:right="1dp" android:bottom="1dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="23dp" />
+            <gradient android:type="radial" android:gradientRadius="24dp" android:centerX="0.5" android:centerY="0.02" android:startColor="#28FFFFFF" android:centerColor="#08FFFFFF" android:endColor="#00FFFFFF" />
         </shape>
     </item>
-    <item android:left="12dp" android:bottom="2dp" android:right="12dp" android:height="3dp" android:gravity="bottom">
-        <shape android:shape="oval">
-            <corners android:radius="100dp" />
-            <gradient android:angle="270" android:startColor="#00202A35" android:centerColor="#18202A35" android:endColor="#30202A35" />
+    <item android:left="0dp" android:top="0dp" android:right="0dp" android:bottom="0dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="23dp" />
+            <solid android:color="#00000000" />
+            <stroke android:width="1dp" android:color="#30FFFFFF" />
         </shape>
     </item>
 </layer-list>
