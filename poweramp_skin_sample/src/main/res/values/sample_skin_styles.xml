@@ -183,6 +183,11 @@
 		<item name="com.maxmpz.audioplayer:ItemTextHeaderPlayButton">@style/ItemTextHeaderPlayButton</item>
 		<item name="com.maxmpz.audioplayer:ItemTextHeaderSearchButton">@style/ItemTextHeaderSearchButton</item>
 		<item name="com.maxmpz.audioplayer:ItemTextHeaderSelectButton">@style/ItemTextHeaderSelectButton</item>
+		<!-- Position overrides must target the scene-specific styles used by SceneParams. -->
+		<item name="com.maxmpz.audioplayer:ItemTextHeaderShuffleButton_scene_header">@style/ItemTextHeaderShuffleButton_scene_header</item>
+		<item name="com.maxmpz.audioplayer:ItemTextHeaderPlayButton_scene_header">@style/ItemTextHeaderPlayButton_scene_header</item>
+		<item name="com.maxmpz.audioplayer:ItemTextHeaderSearchButton_scene_header">@style/ItemTextHeaderSearchButton_scene_header</item>
+		<item name="com.maxmpz.audioplayer:ItemTextHeaderSelectButton_scene_header">@style/ItemTextHeaderSelectButton_scene_header</item>
 
 
 		<!-- Override menu button in just scene_header scene -->
@@ -672,6 +677,20 @@
 		<item name="android:translationY">-6dp</item>
 		<item name="android:background">@drawable/ripple_subcontrol_glass</item>
 		<item name="com.maxmpz.audioplayer:drawableTint">@color/ars_white</item>
+	</style>
+
+	<!-- SceneParams controls the visible header positions; override these styles for scene_header. -->
+	<style name="ItemTextHeaderShuffleButton_scene_header" parent="com.maxmpz.audioplayer:ItemTextHeaderShuffleButton_scene_header">
+		<item name="android:layout_marginTop">-6dp</item>
+	</style>
+	<style name="ItemTextHeaderPlayButton_scene_header" parent="com.maxmpz.audioplayer:ItemTextHeaderPlayButton_scene_header">
+		<item name="android:layout_marginTop">-6dp</item>
+	</style>
+	<style name="ItemTextHeaderSearchButton_scene_header" parent="com.maxmpz.audioplayer:ItemTextHeaderSearchButton_scene_header">
+		<item name="android:layout_marginTop">-6dp</item>
+	</style>
+	<style name="ItemTextHeaderSelectButton_scene_header" parent="com.maxmpz.audioplayer:ItemTextHeaderSelectButton_scene_header">
+		<item name="android:layout_marginTop">-6dp</item>
 	</style>
 
 	<!-- Library's text-header buttons are real views: move them with translationY on the view styles. -->
