@@ -6,10 +6,10 @@
 	<color name="blue">#00f</color>
 
 	<color name="ars_background">#00000000</color>
-	<color name="ars_glass">#55101822</color>
-	<color name="ars_glass_highlight">#2AFFFFFF</color>
-	<color name="ars_glass_border">#66DDE8F2</color>
-	<color name="ars_glass_inner_border">#20DDE8F2</color>
+	<color name="ars_glass">#88303D4B</color>
+	<color name="ars_glass_highlight">#55FFFFFF</color>
+	<color name="ars_glass_border">#99EAF6FF</color>
+	<color name="ars_glass_inner_border">#44EAF6FF</color>
 	<color name="ars_ripple">#33FFFFFF</color>
 	<color name="ars_white">#F5F8FC</color>
 	<color name="ars_white_secondary">#D9E5F0</color>
