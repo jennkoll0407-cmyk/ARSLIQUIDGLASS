@@ -181,11 +181,8 @@
 		<!-- The text header button (text header => header without background image for categories like Albums, Playlists, etc. -->
 		<item name="com.maxmpz.audioplayer:ItemTextHeaderShuffleButton">@style/ItemTextHeaderShuffleButton</item>
 		<item name="com.maxmpz.audioplayer:ItemTextHeaderShuffleButton_scene_header">@style/ItemTextHeaderShuffleButton_scene_header</item>
-		<item name="com.maxmpz.audioplayer:ItemTextHeaderPlayButton">@style/ItemTextHeaderPlayButton</item>
 		<item name="com.maxmpz.audioplayer:ItemTextHeaderPlayButton_scene_header">@style/ItemTextHeaderPlayButton_scene_header</item>
-		<item name="com.maxmpz.audioplayer:ItemTextHeaderSearchButton">@style/ItemTextHeaderSearchButton</item>
 		<item name="com.maxmpz.audioplayer:ItemTextHeaderSearchButton_scene_header">@style/ItemTextHeaderSearchButton_scene_header</item>
-		<item name="com.maxmpz.audioplayer:ItemTextHeaderSelectButton">@style/ItemTextHeaderSelectButton</item>
 		<item name="com.maxmpz.audioplayer:ItemTextHeaderSelectButton_scene_header">@style/ItemTextHeaderSelectButton_scene_header</item>
 
 
