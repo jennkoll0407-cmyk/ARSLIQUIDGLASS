@@ -25,15 +25,15 @@
         </shape>
     </item>
 
-    <!-- Thin capsule-shaped rim highlights: rounded ends prevent boxy corners. -->
+    <!-- Thin oval rim highlights with fully rounded ends. -->
     <item android:left="10dp" android:top="1dp" android:right="10dp" android:height="4dp" android:gravity="top">
-        <shape android:shape="rectangle">
+        <shape android:shape="oval">
             <corners android:radius="100dp" />
             <gradient android:angle="270" android:startColor="#42FFFFFF" android:centerColor="#18FFFFFF" android:endColor="#00FFFFFF" />
         </shape>
     </item>
     <item android:left="10dp" android:bottom="2dp" android:right="10dp" android:height="3dp" android:gravity="bottom">
-        <shape android:shape="rectangle">
+        <shape android:shape="oval">
             <corners android:radius="100dp" />
             <gradient android:angle="270" android:startColor="#00202A35" android:centerColor="#18202A35" android:endColor="#30202A35" />
         </shape>
