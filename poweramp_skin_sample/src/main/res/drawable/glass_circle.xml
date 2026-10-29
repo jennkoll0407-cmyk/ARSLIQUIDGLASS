@@ -15,7 +15,7 @@
     <item android:left="1dp" android:top="1dp" android:right="1dp" android:bottom="1dp">
         <shape android:shape="oval">
             
-            <gradient android:angle="270" android:startColor="#00000000" android:centerColor="#06202A35" android:endColor="#30202A35" />
+            <gradient android:angle="270" android:startColor="#30202A35" android:centerColor="#10202A35" android:endColor="#00202A35" />
         </shape>
     </item>
     <item android:left="3dp" android:top="1dp" android:right="3dp" android:bottom="5dp">
